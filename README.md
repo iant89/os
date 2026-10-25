@@ -106,3 +106,18 @@ device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
 - **`.github/workflows/fetch-gpl-rootfs.yml`** — downloads Verizon's GPL release from an
   environment that can reach verizon.com, unpacks all 152 source tarballs, runs binwalk,
   and commits the init.d/web-config evidence to this branch.
+
+---
+
+## 7. Firmware Analysis Lab (local, offline VM + UART)
+
+- **`docs/Firmware_Analysis_Lab_Setup.md`** — build an air-gap-capable analysis
+  environment: Linux VM (Vagrant/VirtualBox or QEMU/KVM) provisioned with binwalk,
+  unblob, jefferson, ubi-reader, yaffshiv, sasquatch, firmware-mod-kit and Ghidra 12.2;
+  plus a complete UART-to-USB runbook (CP2102/FT232 wiring to the JA1 header, logic-level
+  safety, boot-console capture).
+- **`manifest/firmware-lab-tools.json`** — every tool pinned to an exact version/commit
+  with SHA-256; **`scripts/build_firmware_lab_bundle.sh`** collects them (plus pip/apt
+  closures) for offline install via **`scripts/setup_firmware_lab.sh --bundle`**.
+- **`scripts/uart_connect.sh`** / **`scripts/uart_boot_capture.sh`** + **`udev/`** rules —
+  serial console access and boot-log capture for the device under test.

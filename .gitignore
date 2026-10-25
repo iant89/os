@@ -16,3 +16,8 @@ src/gpl_release_*/
 src/components/
 downloads/
 image-search/
+
+# Firmware lab bundle output (regenerate via scripts/build_firmware_lab_bundle.sh)
+firmware-lab-bundle*/
+firmware-lab-bundle-*.tar.gz
+logs/uart/
