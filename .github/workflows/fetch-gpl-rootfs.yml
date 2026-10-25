@@ -107,40 +107,39 @@ jobs:
 
       - name: Collect init.d scripts, web configs, and boot files
         run: |
-          set -euo pipefail
+          set -uo pipefail
           OUT=analysis/gpl_rootfs
           mkdir -p "$OUT/raw" "$OUT/logs"
-          cd _work
-          {
-            find gpl extracted -type f \( \
+          find _work/gpl _work/extracted -type f \( \
               -path '*/etc/init.d/*' -o -name '*.init' -o -name 'preinit' -o \
               -name 'inittab' -o -name 'rc.common' -o -name 'rc.func' -o \
-              -name 'banner' -o -path '*/etc/config/*' -o -path '*/etc/rc.common' -o \
+              -name 'banner' -o -path '*/etc/config/*' -o \
               -iname '*uhttpd*' -o -iname '*lighttpd*' -o -iname '*nginx*' -o \
               -iname '*thttpd*' -o -iname '*goahead*' -o -iname '*web*.conf' -o \
               -iname '*rpcd*' -o -iname '*uclient*' -o -iname '*cgi-io*' -o \
               -name 'passwd' -o -name 'group' -o -name 'shadow' -o \
-              -iname '*lxc*.conf' -o -name 'config' -path '*lxc*' \
-            \) -size -2M -type f 2>/dev/null || true
-          } | sort -u > analysis/gpl_rootfs/logs/collected_list.txt
-          wc -l analysis/gpl_rootfs/logs/collected_list.txt
-          # preserve original paths under raw/ for provenance
-          tar -cf - -T analysis/gpl_rootfs/logs/collected_list.txt 2>/dev/null | (cd ../"$OUT"/raw && tar -xf -) || true
-          du -sh ../"$OUT"/raw
-          find ../"$OUT"/raw -type f | wc -l
+              -path '*lxc*/config' -o -iname '*lxc*.conf' \
+            \) -size -2M -type f 2>/dev/null | sort -u > "$OUT/logs/collected_list.txt" || true
+          wc -l "$OUT/logs/collected_list.txt" || true
+          sed 's|^_work/||' "$OUT/logs/collected_list.txt" > "$OUT/logs/collected_list_rel.txt" || true
+          (cd _work && tar -cf - -T "../$OUT/logs/collected_list_rel.txt" 2>/dev/null) | (cd "$OUT/raw" && tar -xf -) || true
+          du -sh "$OUT/raw" || true
+          find "$OUT/raw" -type f | wc -l || true
 
       - name: Record firmware-update URLs found in the sources
+        if: always()
         run: |
-          set -euo pipefail
+          set -uo pipefail
           grep -rEoh 'https?://[a-zA-Z0-9./_%?=&:+-]+' _work/gpl --include='*.sh' --include='*.conf' \
             --include='*.json' --include='*.xml' --include='*.init' --include='Makefile' 2>/dev/null \
             | grep -iE 'fota|ota|firmware|update|verizon|wnc' | sort -u | head -60 \
             > analysis/gpl_rootfs/logs/update_urls.txt || true
-          cat analysis/gpl_rootfs/logs/update_urls.txt
+          cat analysis/gpl_rootfs/logs/update_urls.txt || true
 
       - name: Commit analysis payload to branch
+        if: always()
         run: |
-          set -euo pipefail
+          set -uo pipefail
           find analysis/gpl_rootfs -type f -size +4M -delete
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
