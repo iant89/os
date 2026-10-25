@@ -2,7 +2,8 @@ name: Fetch FCC exhibits
 
 # Downloads FCC ID NKR-LV65C-T3 (Verizon Internet Gateway WNC-CR200A) exhibits
 # from the FCC/OET EAS system and mirrors, verifies the SHA-256 published on
-# fccid.io, and stores the PDF as a workflow artifact.
+# fccid.io, and commits the PDF to the branch (workflow artifacts cannot be
+# downloaded from every environment, but git can).
 
 on:
   push:
@@ -11,12 +12,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   fetch-internal-photos:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
       - name: Download Internal Photos exhibit (doc 6604463, 33 pp, 5,357,201 bytes)
         run: |
           set -euo pipefail
@@ -46,6 +51,19 @@ jobs:
           done
           echo "All mirrors failed" >&2
           exit 1
+
+      - name: Commit exhibit PDF to branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f downloads/fcc/WNC-CR200A_FCC_Internal_Photos_6604463.pdf
+          if git diff --cached --quiet; then
+            echo "PDF already present and up to date"
+          else
+            git commit -m "Add FCC Internal Photos exhibit (FCC ID NKR-LV65C-T3, doc 6604463)"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
 
       - uses: actions/upload-artifact@v4
         with:
