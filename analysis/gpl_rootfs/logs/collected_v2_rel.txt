@@ -1,0 +1,1 @@
+mosquitto-1.6.9/mosquitto-1.6.9/test/unit/files/persist_read/empty.test-db
