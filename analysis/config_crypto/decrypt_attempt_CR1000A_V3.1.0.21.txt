@@ -1,0 +1,37 @@
+# Config-backup decryption attempt record (2026-10-25)
+# Input: MeisterLone/Verizon-CR1000A Configs/CR1000A_V3.1.0.21_backup.cfg
+# Tool:  scripts/config_crypto/cfg_backup_tool.py
+# Result: SUCCESS — community method verified. Plaintext never leaves the lab;
+# secrets withheld from this record.
+
+$ cfg_backup_tool.py info CR1000A_V3.1.0.21_backup.cfg
+file          : CR1000A_V3.1.0.21_backup.cfg
+total size    : 11680 B
+ciphertext    : 11664 B (AES-256-CBC, 16-aligned)
+trailing IV   : 4c8faf36e32fa325ecd4c4cba4609936  (16 B)
+wrapped key   : 48 B constant blob
+wrap key      : 32 ASCII bytes (constant, firmware buffer zero-padded)
+wrap IV       : 16 ASCII bytes (constant)
+unwrapped key : present (33 B)  [fingerprint sha256/8: a5f1a17c]
+integrity     : backup_md5 tar member, NOT verified by firmware
+
+$ cfg_backup_tool.py decrypt ... -o /tmp/cr1000a_backup.tar
+decrypted: 11656 bytes (gzip tar) -> /tmp/cr1000a_backup.tar
+
+$ cfg_backup_tool.py inspect ...
+members: 35, potential secrets: 1 (values withheld)
+  backup_md5 (36 B)   = d41d8cd98f00b204e9800998ecf8427e  -   # MD5("") stub
+  uci/*     (30 files, ~15 KB)  — full uci config tree (rpcd logins, httpd,
+             system, network/wan/lan, dhcp/v6, firewall, ddns, dmz, upnpd,
+             qos, static_route, moca, mtu, led, hosts, dns, ethernet, luci,
+             mcafee, arc_vlanif, arc_syslog_ng, arc_wireless, hal, backup)
+  uci/hal            — option model_name 'CR1000A'  (restore binding field)
+  .db        135168  — SQLite 3
+  .cosmos_db  12288  — SQLite 3
+  .oie_db     86016  — SQLite 3
+
+Notes:
+- The vendor-created backup ITSELF contains the empty-file MD5 stub ->
+  firmware never computes a real digest (integrity check non-functional).
+- crypto: AES-256-CBC, per-file IV appended at EOF; key wrapped under constant
+  firmware key (see docs/WNC-CR200A_Config_Backup_Crypto.md §1).
