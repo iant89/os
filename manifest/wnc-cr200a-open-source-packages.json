@@ -1,0 +1,624 @@
+{
+  "device": {
+    "name": "Verizon Internet Gateway (WNC-CR200A)",
+    "model": "WNC-CR200A",
+    "manufacturer": "Wistron NeWeb Corporation (WNC)",
+    "fcc_id": "NKR-LV65C-T3",
+    "platform": "Qualcomm Dragonwing NPro 6E Platform + Snapdragon X65 5G Modem-RF System",
+    "base_os": "OpenWrt 18.06 (musl 1.1.16, LXC 2.1.1 VZSDK container)",
+    "gpl_release_version": "3.2.0.13",
+    "disclosure_date": "2023-08-21"
+  },
+  "verizon_open_source_portal": {
+    "portal_url": "https://www.verizon.com/support/residential/internet/equipment/open-source-software",
+    "gpl_source_archive": {
+      "title": "Verizon Internet Gateway (WNC-CR200A) GPL release 3.2.0.13",
+      "filename": "WNC-CR200A_gpl_release_3.2.0.13.zip",
+      "url": "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_gpl_release_3.2.0.13.zip"
+    },
+    "open_source_disclosure_pdf": {
+      "title": "Verizon Internet Gateway (WNC-CR200A) open source disclosure (PDF)",
+      "filename": "WNC-CR200A_Open_Source_Resource_3.2.0.13.pdf",
+      "url": "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_Open_Source_Resource_3.2.0.13.pdf"
+    },
+    "vzsdk_container_disclosure_pdf": {
+      "title": "Open Source Software used in VZSDK Container (Router G3100, CR1000A, CR1000B, XCI55AX, CR200A, NCM1100)",
+      "filename": "Open_Source_Attribution_List_For_VZSDK_Container.pdf",
+      "url": "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/Verizon-Fios-Router-(G3100-CR1000A-CR1000B)-additional-open-source-disclosures-for-VZSDK-Container.pdf"
+    }
+  },
+  "packages": [
+    {
+      "name": "adb",
+      "version": "1.0.32",
+      "license": "Apache-2.0",
+      "download_site": "https://android.googlesource.com/platform/system/core"
+    },
+    {
+      "name": "arptable",
+      "version": "2015-05-20",
+      "license": "GPL-2.0",
+      "download_site": "https://git.netfilter.org/arptables"
+    },
+    {
+      "name": "attr",
+      "version": "2.4.48",
+      "license": "LGPL-2.1 GPL-2.0",
+      "download_site": "http://git.savannah.nongnu.org/cgit/attr.git/snapshot"
+    },
+    {
+      "name": "avahi",
+      "version": "0.8",
+      "license": "LGPL-2.1",
+      "download_site": "http://avahi.org/"
+    },
+    {
+      "name": "busybox",
+      "version": "1.30.1",
+      "license": "GPL-2.0",
+      "download_site": "http://busybox.net/"
+    },
+    {
+      "name": "bzip2",
+      "version": "1.0.8",
+      "license": "BZIP2",
+      "download_site": "http://www.bzip.org/"
+    },
+    {
+      "name": "ca-certificates",
+      "version": "20190110",
+      "license": "GPL-2+",
+      "download_site": "http://ftp.debian.org/debian/pool/main/c/ca-certificates"
+    },
+    {
+      "name": "c-ares",
+      "version": "1.15.0",
+      "license": "MIT",
+      "download_site": "http://c-ares.haxx.se/"
+    },
+    {
+      "name": "cgi-io",
+      "version": "19",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/feed/packages",
+      "github_mirror": "https://github.com/openwrt/cgi-io.git"
+    },
+    {
+      "name": "conntrack-tools",
+      "version": "2018-05-01",
+      "license": "GPL-2.0",
+      "download_site": "http://conntrack-tools.netfilter.org/"
+    },
+    {
+      "name": "cryptsetup",
+      "version": "1.7.5",
+      "license": "GPL-2.0+ LGPL-2.1+",
+      "download_site": "http://ftp.iij.ad.jp/pub/linux/kernel/linux/utils/cryptsetup/v1.7/"
+    },
+    {
+      "name": "curl",
+      "version": "7.64.1",
+      "license": "MIT",
+      "download_site": "http://curl.haxx.se/",
+      "github_mirror": "https://github.com/curl/curl.git"
+    },
+    {
+      "name": "dbus",
+      "version": "1.12.12",
+      "license": "AFL-2.1",
+      "download_site": "https://dbus.freedesktop.org/releases/dbus/"
+    },
+    {
+      "name": "ddns-scripts",
+      "version": "2.7.8",
+      "license": "GPL-2.0",
+      "download_site": "https://openwrt.org/packages/pkgdata/ddns-scripts"
+    },
+    {
+      "name": "dhcp",
+      "version": "4.4.1",
+      "license": "MPL-2.0",
+      "download_site": "https://www.isc.org/downloads/"
+    },
+    {
+      "name": "dnsmasq",
+      "version": "2.80",
+      "license": "GPL-2.0",
+      "download_site": "http://www.thekelleys.org.uk/dnsmasq/"
+    },
+    {
+      "name": "e2fsprogs",
+      "version": "1.44.5",
+      "license": "GPL-2.0",
+      "download_site": "http://e2fsprogs.sourceforge.net/"
+    },
+    {
+      "name": "ebtables",
+      "version": "2018-06-27",
+      "license": "GPL-2.0",
+      "download_site": "https://git.netfilter.org/ebtables"
+    },
+    {
+      "name": "ethtool",
+      "version": "3.18",
+      "license": "GPL-2.0",
+      "download_site": "http://www.kernel.org/pub/software/network/ethtool/"
+    },
+    {
+      "name": "expat",
+      "version": "2.2.9",
+      "license": "MIT",
+      "download_site": "https://libexpat.github.io/",
+      "github_mirror": "https://github.com/libexpat/libexpat.git"
+    },
+    {
+      "name": "fcgi",
+      "version": "2.4.0",
+      "license": "Open Market Licence",
+      "download_site": "http://www.fastcgi.com/dist/"
+    },
+    {
+      "name": "fstools",
+      "version": "2020-05-12",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/project/fstools.git",
+      "github_mirror": "https://github.com/openwrt/fstools.git"
+    },
+    {
+      "name": "fuse-utils",
+      "version": "2.9.7",
+      "license": "LGPLv2.1 GPLv2",
+      "download_site": "http://fuse.sourceforge.net/"
+    },
+    {
+      "name": "fwtool",
+      "version": "2",
+      "license": "GPL-2.0",
+      "download_site": "https://github.com/openwrt/openwrt/tree/openwrt-18.06/package/system/fwtool",
+      "github_mirror": "https://github.com/openwrt/fwtool.git"
+    },
+    {
+      "name": "gettext (libintl)",
+      "version": "0.19.8.1",
+      "license": "LGPL-2.1",
+      "download_site": "http://www.gnu.org/software/gettext/"
+    },
+    {
+      "name": "glib",
+      "version": "2.58.3",
+      "license": "LGPL-2.1",
+      "download_site": "https://ftp.gnome.org/pub/gnome/sources/glib/2.58/"
+    },
+    {
+      "name": "gmp",
+      "version": "6.1.2",
+      "license": "GPL-2.0+",
+      "download_site": "http://gmplib.org/"
+    },
+    {
+      "name": "i2c-tools",
+      "version": "3.1.2",
+      "license": "GPLv2",
+      "download_site": "http://dl.lm-sensors.org/i2c-tools/releases/"
+    },
+    {
+      "name": "iperf",
+      "version": "2.0.13",
+      "license": "BSD-3-Clause",
+      "download_site": "https://github.com/esnet/iperf"
+    },
+    {
+      "name": "iperf3",
+      "version": "3.7",
+      "license": "BSD-3-Clause",
+      "download_site": "https://downloads.es.net/pub/iperf",
+      "github_mirror": "https://github.com/esnet/iperf.git"
+    },
+    {
+      "name": "iproute2",
+      "version": "4.0.0",
+      "license": "GPL-2.0",
+      "download_site": "http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2"
+    },
+    {
+      "name": "ipset",
+      "version": "7.3",
+      "license": "GPL-2.0",
+      "download_site": "http://ipset.netfilter.org/"
+    },
+    {
+      "name": "iptables",
+      "version": "1.8.3",
+      "license": "GPL-2.0",
+      "download_site": "https://netfilter.org/projects/iptables/files/"
+    },
+    {
+      "name": "iw",
+      "version": "5.0.1",
+      "license": "GPL-2.0",
+      "download_site": "http://ftp.iij.ad.jp/pub/linux/kernel/software/network/iw/"
+    },
+    {
+      "name": "jansson",
+      "version": "2.7",
+      "license": "MIT",
+      "download_site": "http://www.digip.org/jansson/releases/",
+      "github_mirror": "https://github.com/akheron/jansson.git"
+    },
+    {
+      "name": "json-c",
+      "version": "0.13.1",
+      "license": "MIT",
+      "download_site": "https://s3.amazonaws.com/json-c_releases/releases/",
+      "github_mirror": "https://github.com/json-c/json-c.git"
+    },
+    {
+      "name": "jsonfilter",
+      "version": "2018-02-04",
+      "license": "ISC",
+      "download_site": "http://git.openwrt.org/?p=project/jsonpath.git",
+      "github_mirror": "https://github.com/openwrt/jsonpath.git"
+    },
+    {
+      "name": "libaio",
+      "version": "0.3.112",
+      "license": "LGPL-2.1-only",
+      "download_site": "https://releases.pagure.org/libaio"
+    },
+    {
+      "name": "libarchive",
+      "version": "3.4.2",
+      "license": "BSD-2-Clause",
+      "download_site": "https://www.libarchive.org/",
+      "github_mirror": "https://github.com/libarchive/libarchive.git"
+    },
+    {
+      "name": "libassuan",
+      "version": "2.5.3",
+      "license": "GPL-2.0",
+      "download_site": "ftp://ftp.gnupg.org/gcrypt/libassuan/"
+    },
+    {
+      "name": "libcap",
+      "version": "2.27",
+      "license": "GPL-2.0",
+      "download_site": "https://mirrors.edge.kernel.org/pub/linux/libs/security/linux-privs/libcap2/"
+    },
+    {
+      "name": "libdaemon",
+      "version": "0.14",
+      "license": "LGPL-2.1",
+      "download_site": "http://0pointer.de/lennart/projects/libdaemon/"
+    },
+    {
+      "name": "libedit",
+      "version": "20191025-3.1",
+      "license": "BSD-3-Clause",
+      "download_site": "http://thrysoee.dk/editline/"
+    },
+    {
+      "name": "libevent",
+      "version": "2.1.11",
+      "license": "BSD-3-Clause",
+      "download_site": "http://www.monkey.org/~provos/libevent/",
+      "github_mirror": "https://github.com/libevent/libevent.git"
+    },
+    {
+      "name": "libffi",
+      "version": "3.2.1",
+      "license": "MIT",
+      "download_site": "https://sourceforge.org/pub/libffi/",
+      "github_mirror": "https://github.com/libffi/libffi.git"
+    },
+    {
+      "name": "libgcrypt",
+      "version": "1.7.10",
+      "license": "LGPL-2.1+ GPL-2.0+",
+      "download_site": "ftp://ftp.gnupg.org/gcrypt/libgcrypt"
+    },
+    {
+      "name": "libgpg-error",
+      "version": "1.27",
+      "license": "LGPL-2.1+",
+      "download_site": "ftp://ftp.gnupg.org/gcrypt/libgpg-error"
+    },
+    {
+      "name": "libiconv",
+      "version": "1.11.1",
+      "license": "LGPL-2.0",
+      "download_site": "http://www.gnu.org/software/libiconv/"
+    },
+    {
+      "name": "libiwinfo",
+      "version": "2019-10-16",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/project/iwinfo.git",
+      "github_mirror": "https://github.com/openwrt/iwinfo.git"
+    },
+    {
+      "name": "libksba",
+      "version": "1.3.5",
+      "license": "GPL-2.0",
+      "download_site": "https://www.gnupg.org/ftp/gcrypt/libksba/"
+    },
+    {
+      "name": "libmnl",
+      "version": "1.0.4",
+      "license": "LGPL-2.1+",
+      "download_site": "http://www.netfilter.org/projects/libmnl/"
+    },
+    {
+      "name": "libnetfilter-conntrack",
+      "version": "2018-05-01",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.netfilter.org/projects/libnetfilter_conntrack/"
+    },
+    {
+      "name": "libnetfilter-cthelper",
+      "version": "1.0.0",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.netfilter.org/projects/libnetfilter_cthelper/"
+    },
+    {
+      "name": "libnetfilter-cttimeout",
+      "version": "1.0.0",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.netfilter.org/projects/libnetfilter_cttimeout/"
+    },
+    {
+      "name": "libnetfilter-queue",
+      "version": "2017-06-27",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.netfilter.org/projects/libnetfilter_queue/"
+    },
+    {
+      "name": "libnfnetlink",
+      "version": "1.0.1",
+      "license": "GPL-2.0+",
+      "download_site": "http://netfilter.org/projects/libnfnetlink/"
+    },
+    {
+      "name": "libnl",
+      "version": "3.4.0",
+      "license": "LGPL-2.1",
+      "download_site": "http://www.infradead.org/~tgr/libnl/files/"
+    },
+    {
+      "name": "libnl-tiny",
+      "version": "0.1",
+      "license": "LGPL-2.1",
+      "download_site": "https://openwrt.org/docs/techref/libnl",
+      "github_mirror": "https://github.com/openwrt/libnl-tiny.git"
+    },
+    {
+      "name": "libpcap",
+      "version": "1.9.1",
+      "license": "BSD-3-Clause",
+      "download_site": "http://www.tcpdump.org/",
+      "github_mirror": "https://github.com/the-tcpdump-group/libpcap.git"
+    },
+    {
+      "name": "libroxml",
+      "version": "2.3.0",
+      "license": "LGPL-2.1",
+      "download_site": "http://download.libroxml.net/pool/v2.x"
+    },
+    {
+      "name": "librpc",
+      "version": "2015-11-04",
+      "license": "LGPL-2.1",
+      "download_site": "https://git.openwrt.org/project/librpc-uclibc.git",
+      "github_mirror": "https://github.com/openwrt/librpc-uclibc.git"
+    },
+    {
+      "name": "libstrophe",
+      "version": "0.9.2",
+      "license": "MIT",
+      "download_site": "http://strophe.im/libstrophe",
+      "github_mirror": "https://github.com/strophe/libstrophe.git"
+    },
+    {
+      "name": "libubox",
+      "version": "2020-05-25",
+      "license": "ISC",
+      "download_site": "https://git.openwrt.org/?p=project/libubox.git",
+      "github_mirror": "https://github.com/openwrt/libubox.git"
+    },
+    {
+      "name": "libusb",
+      "version": "1.0.22",
+      "license": "LGPL-2.1",
+      "download_site": "http://libusb.info/",
+      "github_mirror": "https://github.com/libusb/libusb.git"
+    },
+    {
+      "name": "libwebsockets",
+      "version": "3.1.0",
+      "license": "LGPL-2.1+exception",
+      "download_site": "https://github.com/warmcat/libwebsockets",
+      "github_mirror": "https://github.com/warmcat/libwebsockets.git"
+    },
+    {
+      "name": "libxml2",
+      "version": "2.9.9",
+      "license": "MIT",
+      "download_site": "http://gd.tuwien.ac.at/languages/libxml/"
+    },
+    {
+      "name": "lighttpd",
+      "version": "1.4.65",
+      "license": "BSD-3-Clause",
+      "download_site": "http://www.lighttpd.net/",
+      "github_mirror": "https://github.com/lighttpd/lighttpd1.4.git"
+    },
+    {
+      "name": "lldpd",
+      "version": "0.7.15",
+      "license": "ISC",
+      "download_site": "http://media.luffy.cx/files/lldpd",
+      "github_mirror": "https://github.com/lldpd/lldpd.git"
+    },
+    {
+      "name": "logrotate",
+      "version": "3.15.0",
+      "license": "GPL-2.0-or-later",
+      "download_site": "https://github.com/logrotate/logrotate",
+      "github_mirror": "https://github.com/logrotate/logrotate.git"
+    },
+    {
+      "name": "lua",
+      "version": "5.1.5",
+      "license": "MIT",
+      "download_site": "http://www.lua.org/"
+    },
+    {
+      "name": "luasocket",
+      "version": "3.0-rc1-20130909",
+      "license": "MIT",
+      "download_site": "https://github.com/diegonehab/luasocket.git",
+      "github_mirror": "https://github.com/lunarmodules/luasocket.git"
+    },
+    {
+      "name": "lvm2",
+      "version": "2.03.02",
+      "license": "GPL-2.0 LGPL-2.1",
+      "download_site": "http://ftp.gwdg.de/pub/linux/sources.redhat.com/lvm2/"
+    },
+    {
+      "name": "lxc",
+      "version": "2.1.1",
+      "license": "LGPL-2.1+ BSD-2-Clause GPL-2.0",
+      "download_site": "https://linuxcontainers.org/lxc/downloads/",
+      "github_mirror": "https://github.com/lxc/lxc.git"
+    },
+    {
+      "name": "lzo",
+      "version": "2.10",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.oberhumer.com/opensource/lzo/"
+    },
+    {
+      "name": "mbedtls",
+      "version": "2.16.6",
+      "license": "GPL-2.0+",
+      "download_site": "https://tls.mbed.org",
+      "github_mirror": "https://github.com/Mbed-TLS/mbedtls.git"
+    },
+    {
+      "name": "mcproxy",
+      "version": "2017-08-24",
+      "license": "GPL-2.0+",
+      "download_site": "git://github.com/mcproxy/mcproxy.git",
+      "github_mirror": "https://github.com/mcproxy/mcproxy.git"
+    },
+    {
+      "name": "miniupnpd",
+      "version": "2.1",
+      "license": "BSD-3-Clause",
+      "download_site": "http://miniupnp.free.fr/files",
+      "github_mirror": "https://github.com/miniupnp/miniupnp.git"
+    },
+    {
+      "name": "mosquitto",
+      "version": "1.6.9",
+      "license": "BSD-3-Clause",
+      "download_site": "https://mosquitto.org/files/source/",
+      "github_mirror": "https://github.com/eclipse-mosquitto/mosquitto.git"
+    },
+    {
+      "name": "mtd",
+      "version": "21",
+      "license": "GPL-2.0+",
+      "download_site": "http://openwrt.org/"
+    },
+    {
+      "name": "mtd-utils",
+      "version": "2.1.1",
+      "license": "GPL-2.0",
+      "download_site": "http://www.linux-mtd.infradead.org/"
+    },
+    {
+      "name": "musl",
+      "version": "1.1.16",
+      "license": "MIT",
+      "download_site": "http://www.musl-libc.org"
+    },
+    {
+      "name": "ncurses",
+      "version": "6.1",
+      "license": "MIT",
+      "download_site": "http://www.gnu.org/software/ncurses/"
+    },
+    {
+      "name": "ndisc6",
+      "version": "1.0.4",
+      "license": "GPL-2.0",
+      "download_site": "https://www.remlab.net/files/ndisc6"
+    },
+    {
+      "name": "netifd",
+      "version": "2019-08-05",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/?p=project/netifd.git",
+      "github_mirror": "https://github.com/openwrt/netifd.git"
+    },
+    {
+      "name": "netpgpverify",
+      "version": "20150204",
+      "license": "BSD",
+      "download_site": "http://www.netpgp.com/src/"
+    },
+    {
+      "name": "nettle",
+      "version": "3.5.1",
+      "license": "GPL-2.0+",
+      "download_site": "http://www.lysator.liu.se/~nisse/nettle/"
+    },
+    {
+      "name": "npth",
+      "version": "1.6",
+      "license": "GPL-2.0",
+      "download_site": "https://www.gnupg.org/ftp/gcrypt/npth/"
+    },
+    {
+      "name": "openssh",
+      "version": "7.9p1",
+      "license": "BSD, ISC",
+      "download_site": "https://www.openssh.com/",
+      "github_mirror": "https://github.com/openssh/openssh-portable.git"
+    },
+    {
+      "name": "openssl",
+      "version": "1.1.1g",
+      "license": "OpenSSL",
+      "download_site": "http://www.openssl.org/",
+      "github_mirror": "https://github.com/openssl/openssl.git"
+    },
+    {
+      "name": "openwrt-keyring",
+      "version": "2019-07-25",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/keyring.git"
+    },
+    {
+      "name": "opkg",
+      "version": "0.4.2",
+      "license": "GPL-2.0",
+      "download_site": "https://git.openwrt.org/project/opkg-lede.git",
+      "github_mirror": "https://github.com/openwrt/opkg-lede.git"
+    },
+    {
+      "name": "pcre",
+      "version": "8.43",
+      "license": "BSD-3-Clause",
+      "download_site": "https://www.pcre.org/"
+    },
+    {
+      "name": "pcre2",
+      "version": "10.32",
+      "license": "BSD-3-Clause",
+      "download_site": "https://www.pcre.org/",
+      "github_mirror": "https://github.com/PCRE2Project/pcre2.git"
+    }
+  ]
+}

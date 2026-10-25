@@ -1,0 +1,18 @@
+# Large downloaded archives from Verizon Open Source Portal
+downloads/*.zip
+downloads/*.tar
+downloads/*.tar.gz
+downloads/*.tar.bz2
+downloads/*.tar.xz
+
+# Extracted full GPL archive tree (keep tracked scripts/manifests/components)
+src/gpl_release_*/
+
+# OS / Editor files
+.DS_Store
+*.swp
+
+# Fetched upstream mirrors, downloads, and web-image scratch (regenerate via scripts/)
+src/components/
+downloads/
+image-search/
