@@ -89,3 +89,20 @@ device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
   on the device label**, not a shared default like `admin`; shared `admin`/`password`
   style defaults exist only on legacy Actiontec/Westell hardware (and one documented
   ASK-NCQ1338 exception).
+
+---
+
+## 6. Rootfs Extraction, Boot Process & Services
+
+- **`docs/WNC-CR200A_Boot_Process_and_Services.md`** — binwalk-based rootfs extraction
+  and analysis of the boot chain, `/etc/init.d/` service set (107 units from a real boot
+  log), and the lighttpd/LuCI/rpcd web server stack. Evidence lives in
+  `analysis/gpl_rootfs/` (CR200A GPL release extraction), `analysis/cr1000a_rootfs/`
+  (initramfs boot files + service order), and `analysis/openwrt-18.06-baseline/`
+  (upstream init framework).
+- **`scripts/binwalk_extract_rootfs.sh`** + **`scripts/extract_cpio.py`** — reusable
+  tooling: carve and unpack root filesystems (squashfs/cpio) from any firmware image and
+  collect init scripts and web configs.
+- **`.github/workflows/fetch-gpl-rootfs.yml`** — downloads Verizon's GPL release from an
+  environment that can reach verizon.com, unpacks all 152 source tarballs, runs binwalk,
+  and commits the init.d/web-config evidence to this branch.

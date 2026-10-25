@@ -1,0 +1,19 @@
+#!/bin/sh
+# Copyright (C) 2006 OpenWrt.org
+# Copyright (C) 2010 Vertical Communications
+
+run_init() {
+	preinit_ip_deconfig
+
+	# Debug purpose
+	# ash --login
+
+	umount /dev
+	umount /sys
+	umount /proc
+	mount --bind /tmp /mnt/root/tmp
+
+	exec switch_root /mnt/root /sbin/init
+}
+
+boot_hook_add preinit_main run_init
