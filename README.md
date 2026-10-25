@@ -167,3 +167,22 @@ enablement path:
 - **Enumeration kit**: `scripts/web_audit/enum_hidden_endpoints.sh` +
   `scripts/web_audit/hidden_paths.txt` (SPA route extraction from JS bundles, path
   probing, `/ubus` object inventory, telnet/tftp port check).
+
+## 11. Configuration backup cryptography
+
+[`docs/WNC-CR200A_Config_Backup_Crypto.md`](docs/WNC-CR200A_Config_Backup_Crypto.md)
+specifies the Save & Restore `.cfg` format and documents a working decryption
+method (verified against a real CR1000A fw-3.1.0.21 backup in this repo):
+
+- **Format**: AES-256-CBC tar archive, per-file IV appended at end of file; the
+  AES key is wrapped under a **constant firmware key** (public constants), i.e.
+  obfuscation rather than confidentiality — any stolen backup is decryptable.
+- **Integrity is non-functional**: the `backup_md5` tar member is written and
+  accepted as the empty-file MD5 stub by the firmware itself; no MAC exists, so
+  restored backups are unauthenticated input (device binding is logic-only).
+- **Plaintext inventory**: 30-file uci config tree (rpcd login hashes, httpd,
+  wireless PSKs, DDNS creds, `hal` model binding) + 3 SQLite state DBs
+  (`.db`, `.cosmos_db`, `.oie_db`) — backups are secret stores.
+- **Tooling**: `scripts/config_crypto/cfg_backup_tool.py` (`info`/`decrypt`/
+  `inspect`, secrets redacted) — inspection-only by design; attempt record in
+  `analysis/config_crypto/decrypt_attempt_CR1000A_V3.1.0.21.txt`.
