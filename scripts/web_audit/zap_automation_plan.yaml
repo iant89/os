@@ -1,0 +1,102 @@
+# ZAP Automation Framework plan — WNC-CR200A web interface audit.
+# Run:  zap.sh -autorun scripts/web_audit/zap_automation_plan.yaml -cmd
+# (lab VM; target = the owner's gateway; see docs/WNC-CR200A_Web_Vulnerability_Audit.md §5)
+---
+env:
+  contexts:
+    - name: cr200a-admin
+      urls:
+        - "https://192.168.1.1/"
+      includePaths:
+        - "https://192.168.1.1.*"
+        - "https://mynetworksettings.com.*"
+      excludePaths: []
+      authentication:
+        method: "autodetect"
+      sessionManagement:
+        method: "autodetect"
+  parameters:
+    failOnError: false
+    failOnWarning: false
+    progressToStdout: true
+  vars: []
+
+jobs:
+  - type: "passiveScan"
+    parameters:
+      maxRuleDurationInMins: 5
+      scanOnlyInScope: true
+
+  - type: "script"
+    parameters:
+      action: "add"
+      type: "active"
+      engine: "ECMAScript : Oracle Nashorn"
+      file: ""            # optional: add a custom ubus JSON fuzzer script
+      name: "ubus-json-attack"
+
+  - type: "spider"
+    parameters:
+      maxDurationInMins: 10
+      maxDepth: 5
+      acceptCookies: true
+
+  - type: "spiderAjax"
+    parameters:
+      maxDurationInMins: 10
+
+  - type: "activeScan"
+    parameters:
+      maxRuleDurationInMins: 10
+      maxScanDurationInMins: 120
+      scanOnlyInScope: true
+      defaultPolicy: "default"
+    policyDefinition:
+      rules:
+        # command injection / path traversal / auth-related rules emphasized
+        - id: 90020   # SQL injection (baseline sanity)
+          strength: "low"
+          threshold: "low"
+        - id: 90026   # OS command injection  (primary: diagnostics/ping class)
+          strength: "high"
+          threshold: "low"
+        - id: 90028   # LDAP injection
+          strength: "low"
+          threshold: "low"
+        - id: 90029   # XPath injection
+          strength: "low"
+          threshold: "low"
+        - id: 90030   # Remote File Inclusion
+          strength: "high"
+          threshold: "low"
+        - id: 90033   # Path traversal           (primary: cgi-download/file read)
+          strength: "high"
+          threshold: "low"
+        - id: 90034   # CRLF injection
+          strength: "medium"
+          threshold: "low"
+        - id: 40018   # Remote code execution (Apache)
+          strength: "high"
+          threshold: "low"
+        - id: 40019   # Shellshock
+          strength: "high"
+          threshold: "low"
+        - id: 40022   # External redirect
+          strength: "medium"
+          threshold: "low"
+        - id: 40026   # Session fixation
+          strength: "medium"
+          threshold: "low"
+        - id: 40028   # ELMAH information disclosure
+          strength: "low"
+          threshold: "low"
+        - id: 40032   # .htaccess info disclosure
+          strength: "medium"
+          threshold: "low"
+
+  - type: "report"
+    parameters:
+      reportDescription: "WNC-CR200A admin interface — authorized audit (owner's device)"
+      reportFormat: "HTML"
+      reportFile: "cr200a-web-audit"
+      reportTitle: "WNC-CR200A Web Vulnerability Audit"

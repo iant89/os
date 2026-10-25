@@ -134,3 +134,17 @@ device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
 - **`analysis/web_auth/`** — evidence copies: rpcd `session.c`/`session.h` (from the
   CR200A GPL release), stock OpenWrt 18.06 `rpcd.config` and `luci-base.json` ACL,
   mosquitto 1.6.9 stock config.
+
+---
+
+## 9. Web Interface Vulnerability Audit
+
+- **`docs/WNC-CR200A_Web_Vulnerability_Audit.md`** — audit of the admin web interface
+  for command injection, authentication bypass, and path traversal, focused on
+  diagnostics/ping, firmware-upgrade, DDNS, and login endpoints. Findings are backed by
+  the rpcd/shell source shipped in the GPL release (e.g. DDNS `eval` command injection,
+  `file exec` arbitrary execution, empty-hash login bypass) plus known-issue classes to
+  verify live (LuCI CVE-2019-12272, cgi-io GHSA-jw5r-xhf5-2xcq).
+- **`scripts/web_audit/`** — ready-to-run interception kit: OWASP ZAP Automation
+  Framework plan, Burp Suite checklist, and `probe_auth_bypass.sh` (curl-based /ubus
+  auth-bypass and traversal probes) for the lab VM against the live device.
