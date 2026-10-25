@@ -1,0 +1,1564 @@
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/aclocal.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+64            0x40            Copyright string: "Copyright (C) 1996-2017 Free Software Foundation, Inc."
+1103          0x44F           Copyright string: "Copyright (C) 2002-2017 Free Software Foundation, Inc."
+2669          0xA6D           Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+5077          0x13D5          Copyright string: "Copyright (C) 1997-2017 Free Software Foundation, Inc."
+6036          0x1794          Copyright string: "Copyright (C) 1999-2017 Free Software Foundation, Inc."
+13319         0x3407          Copyright string: "Copyright (C) 1999-2017 Free Software Foundation, Inc."
+16318         0x3FBE          Copyright string: "Copyright (C) 1996-2017 Free Software Foundation, Inc."
+24270         0x5ECE          Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+24875         0x612B          Copyright string: "Copyright (C) 2003-2017 Free Software Foundation, Inc."
+25513         0x63A9          Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+26854         0x68E6          Copyright string: "Copyright (C) 1997-2017 Free Software Foundation, Inc."
+28010         0x6D6A          Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+29023         0x715F          Copyright string: "Copyright (C) 1999-2017 Free Software Foundation, Inc."
+30638         0x77AE          Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+31358         0x7A7E          Copyright string: "Copyright (C) 1996-2017 Free Software Foundation, Inc."
+33927         0x8487          Copyright string: "Copyright (C) 2009-2017 Free Software Foundation, Inc."
+35762         0x8BB2          Copyright string: "Copyright (C) 2001-2017 Free Software Foundation, Inc."
+37078         0x90D6          Copyright string: "Copyright (C) 2006-2017 Free Software Foundation, Inc."
+37755         0x937B          Copyright string: "Copyright (C) 2004-2017 Free Software Foundation, Inc."
+
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/test/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2017 Free Software Foundation, Inc."
+
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/config.guess =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+59            0x3B            Copyright string: "Copyright 1992-2017 Free Software Foundation, Inc."
+1868          0x74C           Copyright string: "Copyright 1992-2017 Free Software Foundation, Inc."
+8511          0x213F          Unix path: /usr/sbin/sizer -v | awk '{print $3}'`
+8579          0x2183          Unix path: /usr/sbin/sizer -v | awk '{print $4}'`
+8653          0x21CD          Unix path: /usr/sbin/psrinfo has been available on
+8899          0x22C3          Unix path: /usr/sbin/psrinfo -v | sed -n -e 's/^  The alpha \(.*\) processor.*$/\1/p' | head -n 1`
+11620         0x2D64          Unix path: /usr/bin/uname -p` in
+13014         0x32D6          Unix path: /usr/bin/arch -k`" in
+16650         0x410A          Unix path: /usr/bin/uname -p`
+17735         0x4547          Unix path: /usr/bin/oslevel ] ; then
+17772         0x456C          Unix path: /usr/bin/oslevel`
+17925         0x4605          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18309         0x4785          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18456         0x4818          Unix path: /usr/sbin/lsdev -C -c processor -S available | sed 1q | awk '{ print $1 }'`
+18536         0x4868          Unix path: /usr/sbin/lsattr -El ${IBM_CPU_ID} | grep ' POWER' >/dev/null 2>&1; then
+18665         0x48E9          Unix path: /usr/bin/lslpp ] ; then
+18700         0x490C          Unix path: /usr/bin/lslpp -Lqc bos.rte.libc |
+19670         0x4CD6          Unix path: /usr/bin/getconf ]; then
+19717         0x4D05          Unix path: /usr/bin/getconf SC_CPU_VERSION 2>/dev/null`
+19784         0x4D48          Unix path: /usr/bin/getconf SC_KERNEL_BITS 2>/dev/null`
+23125         0x5A55          Unix path: /usr/sbin/sysversion ] ; then
+25439         0x635F          Unix path: /usr/bin/uname -p`
+33302         0x8216          Unix path: /usr/include/link.h >/dev/null 2>/dev/null; then
+33823         0x841F          Unix path: /usr/options/cb.name; then
+33889         0x8461          Unix path: /usr/options/cb.name`
+34981         0x88A5          Unix path: /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
+43537         0xAA11          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null`
+43747         0xAAE3          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null`
+43856         0xAB50          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null`
+43914         0xAB8A          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null`
+
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/config.sub =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+61            0x3D            Copyright string: "Copyright 1992-2017 Free Software Foundation, Inc."
+2745          0xAB9           Copyright string: "Copyright 1992-2017 Free Software Foundation, Inc."
+
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2017 Free Software Foundation, Inc."
+
+===== binwalk unpacked/logrotate-3.15.0/logrotate-3.15.0/configure =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+140           0x8C            Copyright string: "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc."
+933           0x3A5           Unix path: /usr/bin/printf.
+1587          0x633           Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+1677          0x68D           Unix path: /usr/ucb/echo -n "$1$as_nl"'
+1721          0x6B9           Unix path: /usr/ucb/echo -n'
+41300         0xA154          Unix path: /var/lib/logrotate.status by
+44482         0xADC2          Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+58230         0xE376          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+58451         0xE453          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null  || echo unknown`
+58531         0xE4A3          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null || echo unknown`
+58611         0xE4F3          Unix path: /usr/bin/hostinfo   = `(/usr/bin/hostinfo) 2>/dev/null   || echo unknown`
+58771         0xE593          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null  || echo unknown`
+70295         0x11297         Unix path: /usr/sbin/install
+70321         0x112B1         Unix path: /usr/etc/install
+70450         0x11332         Unix path: /usr/bin/installbsd, which doesn't work without a -g flag
+70514         0x11372         Unix path: /usr/afsws/bin/install, which mishandles nonexistent args
+70579         0x113B3         Unix path: /usr/ucb/install, which tries to use the nonexistent group "staff"
+71373         0x116CD         Unix path: /usr/afsws/bin/* | \
+80230         0x13966         Unix path: /opt/sfw/bin
+95382         0x17496         Unix path: /usr/ucb/cc"; then
+124413        0x1E5FD         Unix path: /usr/xpg4/bin
+125872        0x1EBB0         Unix path: /usr/xpg4/bin" "$LINENO" 5
+126546        0x1EE52         Unix path: /usr/xpg4/bin
+127993        0x1F3F9         Unix path: /usr/xpg4/bin" "$LINENO" 5
+137157        0x217C5         Unix path: /usr/ucb/cc"; then
+173652        0x2A654         Unix path: /var/lib/logrotate.status"
+173739        0x2A6AB         Unix path: /usr/bin/mailx"
+173783        0x2A6D7         Unix path: /usr/contrib/bin/gzip"
+173836        0x2A70C         Unix path: /usr/contrib/bin/gunzip"
+173929        0x2A769         Unix path: /usr/bin/mailx"
+174003        0x2A7B3         Unix path: /usr/bin/mail"
+174046        0x2A7DE         Unix path: /usr/bin/gzip"
+174091        0x2A80B         Unix path: /usr/bin/gunzip"
+174162        0x2A852         Unix path: /usr/bin/gzip"
+174207        0x2A87F         Unix path: /usr/bin/gunzip"
+183481        0x2CCB9         Unix path: /usr/bin/printf.
+184135        0x2CF47         Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+184225        0x2CFA1         Unix path: /usr/ucb/echo -n "$1$as_nl"'
+184269        0x2CFCD         Unix path: /usr/ucb/echo -n'
+194589        0x2F81D         Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/sshd.0 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+1184          0x4A0           Unix path: /usr/sbin/sshd.
+3273          0xCC9           Unix path: /etc/ssh/sshd_config.  sshd refuses to start if there is no
+3939          0xF63           Unix path: /etc/ssh/ssh_host_ecdsa_key, /etc/ssh/ssh_host_ed25519_key and
+4015          0xFAF           Unix path: /etc/ssh/ssh_host_rsa_key.  It is possible to have multiple host
+10314         0x284A          Unix path: /etc/ssh/sshrc exists, runs it;
+11985         0x2ED1          Unix path: /etc/ssh/sshrc is run, and if that does not
+21015         0x5217          OpenSSH RSA public key
+21502         0x53FE          OpenSSH RSA public key
+21579         0x544B          OpenSSH RSA public key
+21668         0x54A4          OpenSSH RSA public key
+21757         0x54FD          Unix path: /etc/ssh/ssh_known_hosts and ~/.ssh/known_hosts files contain host
+24103         0x5E27          Unix path: /etc/ssh/ssh_host_rsa_key.pub.
+25817         0x64D9          Unix path: /etc/ssh/ssh_host_rsa_key.pub and adding the host names at the
+26279         0x66A7          OpenSSH RSA public key
+26473         0x6769          OpenSSH RSA public key
+26624         0x6800          OpenSSH RSA public key
+30817         0x7861          Unix path: /etc/ssh/ssh_host_ecdsa_key
+30850         0x7882          Unix path: /etc/ssh/ssh_host_ed25519_key
+30885         0x78A5          Unix path: /etc/ssh/ssh_host_rsa_key
+31195         0x79DB          Unix path: /etc/ssh/ssh_host_ecdsa_key.pub
+31232         0x7A00          Unix path: /etc/ssh/ssh_host_ed25519_key.pub
+31271         0x7A27          Unix path: /etc/ssh/ssh_host_rsa_key.pub
+31761         0x7C11          Unix path: /etc/ssh/ssh_known_hosts
+32148         0x7D94          Unix path: /etc/ssh/sshd_config
+32315         0x7E3B          Unix path: /etc/ssh/sshrc
+32818         0x8032          Unix path: /var/run/sshd.pid
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/ssh_config.0 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+404           0x194           Unix path: /etc/ssh/ssh_config)
+17671         0x4507          Unix path: /etc/ssh/ssh_config enables the use of the helper program
+22411         0x578B          Unix path: /etc/ssh/ssh_known_hosts, /etc/ssh/ssh_known_hosts2.
+39392         0x99E0          Unix path: /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
+49705         0xC229          Unix path: /etc/ssh/ssh_known_hosts file is poorly
+55347         0xD833          Unix path: /usr/X11R6/bin/xauth.
+58358         0xE3F6          Unix path: /etc/ssh/ssh_config
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/.depend =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/config.h.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+12382         0x305E          Unix path: /etc/default/login */
+34448         0x8690          eCos RTOS string reference: "ecos' is a member of `struct passwd'. */"
+34519         0x86D7          eCos RTOS string reference: "ECOS"
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/ssh.0 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+5694          0x163E          Unix path: /etc/ssh/ssh_config) will be ignored.  The
+22962         0x59B2          Unix path: /etc/ssh/ssh_known_hosts and ~/.ssh/known_hosts,
+26802         0x68B2          Unix path: /etc/ssh/ssh_known_hosts is automatically checked for known
+34142         0x855E          Unix path: /etc/ssh/ssh_host_rsa_key
+37786         0x939A          OpenSSH RSA public key
+37853         0x93DD          OpenSSH RSA public key
+45847         0xB317          Unix path: /etc/ssh/ssh_config
+46005         0xB3B5          Unix path: /etc/ssh/ssh_host_key
+46032         0xB3D0          Unix path: /etc/ssh/ssh_host_dsa_key
+46063         0xB3EF          Unix path: /etc/ssh/ssh_host_ecdsa_key
+46096         0xB410          Unix path: /etc/ssh/ssh_host_ed25519_key
+46131         0xB433          Unix path: /etc/ssh/ssh_host_rsa_key
+46288         0xB4D0          Unix path: /etc/ssh/ssh_known_hosts
+46624         0xB620          Unix path: /etc/ssh/sshrc
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/ChangeLog =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+39048         0x9888          OpenSSH DSA public key
+249845        0x3CFF5         Unix path: /usr/bin/time calls around tests, makes diffing test
+260541        0x3F9BD         OpenSSH RSA public key
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/configure.ac =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+4             0x4             Copyright string: "Copyright (c) 1999-2004 Damien Miller"
+191           0xBF            Copyright string: "copyright notice and this permission notice appear in all copies."
+17494         0x4456          Unix path: /usr/lib/textreadmode.o"
+23034         0x59FA          Unix path: /var/log/btmp"], [log for bad login attempts])
+23825         0x5D11          Unix path: /var/log/btmp"], [log for bad login attempts])
+27914         0x6D0A          Unix path: /usr/adm/lastlog"
+27982         0x6D4E          Unix path: /usr/adm/wtmp
+28005         0x6D65          Unix path: /usr/spool/mail
+29314         0x7282          Unix path: /etc/default/login
+29421         0x72ED          Unix path: /var/adm/lastlog"
+31341         0x7A6D          Unix path: /var/adm/wtmp
+31378         0x7A92          Unix path: /var/adm/lastlog
+32109         0x7D6D          Unix path: /etc/default/login
+32131         0x7D83          Unix path: /usr/ucblib/libucb.a no longer needed on ReliantUNIX
+33274         0x81FA          Unix path: /var/spool/mail
+34557         0x86FD          Unix path: /etc/sia/matrix.conf; then
+35532         0x8ACC          Unix path: /etc/default/login
+38485         0x9655          Unix path: /usr/local/lib -R/usr/local/lib ${saved_LDFLAGS}"
+38556         0x969C          Unix path: /usr/local/lib ${saved_LDFLAGS}"
+38608         0x96D0          Unix path: /usr/local/include ${saved_CPPFLAGS}"
+68966         0x10D66         Unix path: /usr/local/ssl/lib -R/usr/local/ssl/lib ${saved_LDFLAGS}"
+69047         0x10DB7         Unix path: /usr/local/ssl/lib ${saved_LDFLAGS}"
+69105         0x10DF1         Unix path: /usr/local/ssl/include ${saved_CPPFLAGS}"
+83917         0x147CD         OpenSSH ECDSA (Curve P-256) public key
+84223         0x148FF         OpenSSH ECDSA (Curve P-384) public key
+84553         0x14A49         OpenSSH ECDSA (Curve P-521) public key
+86313         0x15129         Unix path: /var/run/egd-pool)],
+86377         0x15169         Unix path: /var/run/egd-pool"
+87138         0x15462         Unix path: /var/run/egd-pool /dev/egd-pool /etc/entropy; do
+113286        0x1BA86         eCos RTOS string reference: "ecos, struct passwd.pw_class,"
+127125        0x1F095         Unix path: /usr/X/bin"
+127177        0x1F0C9         Unix path: /usr/bin/X11"
+127231        0x1F0FF         Unix path: /usr/X11R6/bin"
+127287        0x1F137         Unix path: /usr/openwin/bin"
+127400        0x1F1A8         Unix path: /usr/openwin/bin/xauth") ; then
+127447        0x1F1D7         Unix path: /usr/openwin/bin/xauth"
+128425        0x1F5A9         Unix path: /var/spool/mail.
+130011        0x1FBDB         Unix path: /var/spool/mail
+130069        0x1FC15         Unix path: /var/spool/mail])
+130129        0x1FC51         Unix path: /var/spool/mail"])
+133245        0x2087D         Unix path: /etc/default/login and use it if present.
+133378        0x20902         Unix path: /etc/default/login [no]],
+133460        0x20954         Unix path: /etc/default/login handling disabled])
+133689        0x20A39         Unix path: /etc/default/login])
+133838        0x20ACE         Unix path: /etc/default/login"],
+133886        0x20AFE         Unix path: /etc/default/login ])
+133944        0x20B38         Unix path: /etc/default/login"; then
+134043        0x20B9B         Unix path: /etc/default/login])
+141903        0x22A4F         Unix path: /var/log/lastlog /usr/adm/lastlog /var/adm/lastlog /etc/security/lastlog ; do
+142841        0x22DF9         Unix path: /usr/adm/utmp /var/run/utmp; do
+143593        0x230E9         Unix path: /usr/adm/wtmp /var/log/wtmp; do
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/moduli =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/ssh_config.5 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+48            0x30            Copyright string: "Copyright (c) 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland"
+512           0x200           Copyright string: "Copyright (c) 1999,2000 Markus Friedl.  All rights reserved."
+577           0x241           Copyright string: "Copyright (c) 1999 Aaron Campbell.  All rights reserved."
+638           0x27E           Copyright string: "Copyright (c) 1999 Theo de Raadt.  All rights reserved."
+913           0x391           Copyright string: "copyright"
+1055          0x41F           Copyright string: "copyright"
+2413          0x96D           Unix path: /etc/ssh/ssh_config
+17197         0x432D          Unix path: /etc/ssh/ssh_config
+21178         0x52BA          Unix path: /etc/ssh/ssh_known_hosts ,
+21209         0x52D9          Unix path: /etc/ssh/ssh_known_hosts2 .
+35455         0x8A7F          Unix path: /usr/bin/nc -X connect -x 192.0.2.0:8080 %h %p
+44137         0xAC69          Unix path: /etc/ssh/ssh_known_hosts
+48970         0xBF4A          Unix path: /usr/X11R6/bin/xauth .
+51731         0xCA13          Unix path: /etc/ssh/ssh_config
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/config.guess =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+59            0x3B            Copyright string: "Copyright 1992-2016 Free Software Foundation, Inc."
+1868          0x74C           Copyright string: "Copyright 1992-2016 Free Software Foundation, Inc."
+8511          0x213F          Unix path: /usr/sbin/sizer -v | awk '{print $3}'`
+8579          0x2183          Unix path: /usr/sbin/sizer -v | awk '{print $4}'`
+8653          0x21CD          Unix path: /usr/sbin/psrinfo has been available on
+8899          0x22C3          Unix path: /usr/sbin/psrinfo -v | sed -n -e 's/^  The alpha \(.*\) processor.*$/\1/p' | head -n 1`
+11620         0x2D64          Unix path: /usr/bin/uname -p` in
+13014         0x32D6          Unix path: /usr/bin/arch -k`" in
+16650         0x410A          Unix path: /usr/bin/uname -p`
+17735         0x4547          Unix path: /usr/bin/oslevel ] ; then
+17772         0x456C          Unix path: /usr/bin/oslevel`
+17925         0x4605          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18309         0x4785          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18456         0x4818          Unix path: /usr/sbin/lsdev -C -c processor -S available | sed 1q | awk '{ print $1 }'`
+18536         0x4868          Unix path: /usr/sbin/lsattr -El ${IBM_CPU_ID} | grep ' POWER' >/dev/null 2>&1; then
+18665         0x48E9          Unix path: /usr/bin/lslpp ] ; then
+18700         0x490C          Unix path: /usr/bin/lslpp -Lqc bos.rte.libc |
+19670         0x4CD6          Unix path: /usr/bin/getconf ]; then
+19717         0x4D05          Unix path: /usr/bin/getconf SC_CPU_VERSION 2>/dev/null`
+19784         0x4D48          Unix path: /usr/bin/getconf SC_KERNEL_BITS 2>/dev/null`
+23125         0x5A55          Unix path: /usr/sbin/sysversion ] ; then
+25439         0x635F          Unix path: /usr/bin/uname -p`
+32776         0x8008          Unix path: /usr/include/link.h >/dev/null 2>/dev/null; then
+33297         0x8211          Unix path: /usr/options/cb.name; then
+33363         0x8253          Unix path: /usr/options/cb.name`
+34455         0x8697          Unix path: /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
+43011         0xA803          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null`
+43221         0xA8D5          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null`
+43330         0xA942          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null`
+43388         0xA97C          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null`
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/config.sub =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+61            0x3D            Copyright string: "Copyright 1992-2016 Free Software Foundation, Inc."
+2745          0xAB9           Copyright string: "Copyright 1992-2016 Free Software Foundation, Inc."
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/sshd_config.0 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+208           0xD0            Unix path: /etc/ssh/sshd_config (or the file
+24185         0x5E79          Unix path: /etc/ssh/ssh_host_ecdsa_key,
+24227         0x5EA3          Unix path: /etc/ssh/ssh_host_ed25519_key and /etc/ssh/ssh_host_rsa_key.
+26241         0x6681          Unix path: /etc/ssh/known_hosts.  The
+42573         0xA64D          Unix path: /var/run/sshd.pid.
+54680         0xD598          Unix path: /usr/X11R6/bin/xauth.
+56622         0xDD2E          Unix path: /etc/ssh/sshd_config
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/ge25519_base.data =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/sshd_config.5 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+48            0x30            Copyright string: "Copyright (c) 1995 Tatu Ylonen <ylo@cs.hut.fi>, Espoo, Finland"
+512           0x200           Copyright string: "Copyright (c) 1999,2000 Markus Friedl.  All rights reserved."
+577           0x241           Copyright string: "Copyright (c) 1999 Aaron Campbell.  All rights reserved."
+638           0x27E           Copyright string: "Copyright (c) 1999 Theo de Raadt.  All rights reserved."
+913           0x391           Copyright string: "copyright"
+1055          0x41F           Copyright string: "copyright"
+2219          0x8AB           Unix path: /etc/ssh/sshd_config
+22589         0x583D          Unix path: /etc/ssh/ssh_host_ecdsa_key ,
+22623         0x585F          Unix path: /etc/ssh/ssh_host_ed25519_key
+22661         0x5885          Unix path: /etc/ssh/ssh_host_rsa_key .
+24330         0x5F0A          Unix path: /etc/ssh/known_hosts .
+38542         0x968E          Unix path: /var/run/sshd.pid .
+48676         0xBE24          Unix path: /usr/X11R6/bin/xauth .
+50583         0xC597          Unix path: /etc/ssh/sshd_config
+
+===== binwalk unpacked/openssh-7.9p1/openssh-7.9p1/configure =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+229           0xE5            Copyright string: "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc."
+1022          0x3FE           Unix path: /usr/bin/printf.
+1676          0x68C           Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+1766          0x6E6           Unix path: /usr/ucb/echo -n "$1$as_nl"'
+1810          0x712           Unix path: /usr/ucb/echo -n'
+41133         0xA0AD          Unix path: /etc/default/login no
+43638         0xAA76          Unix path: /var/run/egd-pool)
+47558         0xB9C6          Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+67806         0x108DE         Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+68027         0x109BB         Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null  || echo unknown`
+68107         0x10A0B         Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null || echo unknown`
+68187         0x10A5B         Unix path: /usr/bin/hostinfo   = `(/usr/bin/hostinfo) 2>/dev/null   || echo unknown`
+68347         0x10AFB         Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null  || echo unknown`
+83387         0x145BB         Unix path: /usr/ucb/cc"; then
+108747        0x1A8CB         Unix path: /usr/xpg4/bin
+110206        0x1AE7E         Unix path: /usr/xpg4/bin" "$LINENO" 5
+110880        0x1B120         Unix path: /usr/xpg4/bin
+112327        0x1B6C7         Unix path: /usr/xpg4/bin" "$LINENO" 5
+128547        0x1F623         Unix path: /usr/sbin/install
+128573        0x1F63D         Unix path: /usr/etc/install
+128702        0x1F6BE         Unix path: /usr/bin/installbsd, which doesn't work without a -g flag
+128766        0x1F6FE         Unix path: /usr/afsws/bin/install, which mishandles nonexistent args
+128831        0x1F73F         Unix path: /usr/ucb/install, which tries to use the nonexistent group "staff"
+129625        0x1FA59         Unix path: /usr/afsws/bin/* | \
+132235        0x2048B         Unix path: /usr/xpg4/bin
+133682        0x20A32         Unix path: /usr/xpg4/bin" "$LINENO" 5
+134214        0x20C46         Unix path: /opt/sfw/bin
+210266        0x3355A         Unix path: /usr/lib/textreadmode.o"
+220787        0x35E73         Unix path: /var/log/btmp\"" >>confdefs.h
+221304        0x36078         Unix path: /var/log/btmp\"" >>confdefs.h
+226592        0x37520         Unix path: /usr/adm/lastlog"
+226660        0x37564         Unix path: /usr/adm/wtmp
+226683        0x3757B         Unix path: /usr/spool/mail
+227825        0x379F1         Unix path: /etc/default/login
+227932        0x37A5C         Unix path: /var/adm/lastlog"
+233377        0x38FA1         Unix path: /var/adm/wtmp
+233414        0x38FC6         Unix path: /var/adm/lastlog
+236469        0x39BB5         Unix path: /etc/default/login
+236491        0x39BCB         Unix path: /usr/ucblib/libucb.a no longer needed on ReliantUNIX
+237864        0x3A128         Unix path: /var/spool/mail
+241108        0x3ADD4         Unix path: /etc/sia/matrix.conf; then
+242207        0x3B21F         Unix path: /etc/default/login
+252548        0x3DA84         Unix path: /usr/local/lib -R/usr/local/lib ${saved_LDFLAGS}"
+252619        0x3DACB         Unix path: /usr/local/lib ${saved_LDFLAGS}"
+252671        0x3DAFF         Unix path: /usr/local/include ${saved_CPPFLAGS}"
+339636        0x52EB4         Unix path: /usr/local/ssl/lib -R/usr/local/ssl/lib ${saved_LDFLAGS}"
+339717        0x52F05         Unix path: /usr/local/ssl/lib ${saved_LDFLAGS}"
+339775        0x52F3F         Unix path: /usr/local/ssl/include ${saved_CPPFLAGS}"
+411804        0x6489C         OpenSSH ECDSA (Curve P-256) public key
+412095        0x649BF         OpenSSH ECDSA (Curve P-384) public key
+412410        0x64AFA         OpenSSH ECDSA (Curve P-521) public key
+417305        0x65E19         Unix path: /var/run/egd-pool"
+418252        0x661CC         Unix path: /var/run/egd-pool /dev/egd-pool /etc/entropy; do
+485371        0x767FB         eCos RTOS string reference: "ecos" "ac_cv_member_struct_passwd_pw_gecos" ""
+485409        0x76821         eCos RTOS string reference: "ecos" ""
+485502        0x7687E         eCos RTOS string reference: "ecos" = xyes; then :"
+485581        0x768CD         eCos RTOS string reference: "ECOS 1"
+527857        0x80DF1         Unix path: /usr/X/bin"
+527909        0x80E25         Unix path: /usr/bin/X11"
+527963        0x80E5B         Unix path: /usr/X11R6/bin"
+528019        0x80E93         Unix path: /usr/openwin/bin"
+529202        0x81332         Unix path: /usr/openwin/bin/xauth") ; then
+529249        0x81361         Unix path: /usr/openwin/bin/xauth"
+531705        0x81CF9         Unix path: /var/spool/mail
+531797        0x81D55         Unix path: /var/spool/mail" >&5
+531852        0x81D8C         Unix path: /var/spool/mail" >&6; }
+531929        0x81DD9         Unix path: /var/spool/mail"
+538055        0x835C7         Unix path: /etc/default/login and use it if present.
+538326        0x836D6         Unix path: /etc/default/login handling disabled" >&5
+538386        0x83712         Unix path: /etc/default/login handling disabled" >&6;}
+538659        0x83823         Unix path: /etc/default/login" >&5
+538740        0x83874         Unix path: /etc/default/login" >&2;}
+538913        0x83921         Unix path: /etc/default/login"" | $as_tr_sh`
+539003        0x8397B         Unix path: /etc/default/login\"" >&5
+539056        0x839B0         Unix path: /etc/default/login\"... " >&6; }
+539295        0x83A9F         Unix path: /etc/default/login""; then
+539577        0x83BB9         Unix path: /etc/default/login
+539636        0x83BF4         Unix path: /etc/default/login"; then
+549391        0x8620F         Unix path: /var/log/lastlog /usr/adm/lastlog /var/adm/lastlog /etc/security/lastlog ; do
+550673        0x86711         Unix path: /usr/adm/utmp /var/run/utmp; do
+551764        0x86B54         Unix path: /usr/adm/wtmp /var/log/wtmp; do
+559940        0x88B44         Unix path: /usr/bin/printf.
+560594        0x88DD2         Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+560684        0x88E2C         Unix path: /usr/ucb/echo -n "$1$as_nl"'
+560728        0x88E58         Unix path: /usr/ucb/echo -n'
+570915        0x8B623         Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/fused-src/gmock-gtest-all.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+1907          0x773           Copyright string: "Copyright 2005, Google Inc."
+2179          0x883           Copyright string: "copyright"
+2322          0x912           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+3530          0xDCA           Copyright string: "Copyright 2007, Google Inc."
+3802          0xEDA           Copyright string: "copyright"
+3945          0xF69           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+15566         0x3CCE          Copyright string: "Copyright 2005, Google Inc."
+15838         0x3DDE          Copyright string: "copyright"
+15981         0x3E6D          Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+196301        0x2FECD         XML document, version: ""1."
+197834        0x304CA         XML document, version: ""1."
+279474        0x443B2         Copyright string: "Copyright 2005, Google Inc."
+279746        0x444C2         Copyright string: "copyright"
+279889        0x44551         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+340747        0x5330B         Copyright string: "Copyright 2008, Google Inc."
+341019        0x5341B         Copyright string: "copyright"
+341162        0x534AA         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+354764        0x569CC         Copyright string: "Copyright 2007, Google Inc."
+355036        0x56ADC         Copyright string: "copyright"
+355179        0x56B6B         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+360343        0x57F97         Copyright string: "Copyright 2008, Google Inc."
+360615        0x580A7         Copyright string: "copyright"
+360758        0x58136         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+404463        0x62BEF         Copyright string: "Copyright 2007, Google Inc."
+404735        0x62CFF         Copyright string: "copyright"
+404878        0x62D8E         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+419452        0x6667C         Copyright string: "Copyright 2008, Google Inc."
+419724        0x6678C         Copyright string: "copyright"
+419867        0x6681B         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+423370        0x675CA         Copyright string: "Copyright 2008 Google Inc."
+423641        0x676D9         Copyright string: "copyright"
+423784        0x67768         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+427232        0x684E0         Copyright string: "Copyright 2008, Google Inc."
+427504        0x685F0         Copyright string: "copyright"
+427647        0x6867F         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+429167        0x68C6F         Copyright string: "Copyright 2007, Google Inc."
+429439        0x68D7F         Copyright string: "copyright"
+429582        0x68E0E         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+434316        0x6A08C         Copyright string: "Copyright 2007, Google Inc."
+434588        0x6A19C         Copyright string: "copyright"
+434731        0x6A22B         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+441701        0x6BD65         Copyright string: "Copyright 2007, Google Inc."
+441973        0x6BE75         Copyright string: "copyright"
+442116        0x6BF04         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+459661        0x7038D         Copyright string: "Copyright 2007, Google Inc."
+459933        0x7049D         Copyright string: "copyright"
+460076        0x7052C         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+492601        0x78439         Copyright string: "Copyright 2008, Google Inc."
+492873        0x78549         Copyright string: "copyright"
+493016        0x785D8         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/aclocal.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+64            0x40            Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+1176          0x498           Copyright string: "Copyright (C) 1996-2001, 2003-2015 Free Software Foundation, Inc."
+1504          0x5E0           Copyright string: "Copyright (C) 2014 Free Software Foundation, Inc."
+21806         0x552E          Copyright string: "Copyright (C) 2011 Free Software Foundation, Inc."
+43722         0xAACA          Unix path: /usr/bin/file conftest.$ac_objext` in
+44133         0xAC65          Unix path: /usr/bin/file conftest.$ac_objext` in
+44340         0xAD34          Unix path: /usr/bin/file conftest.$ac_objext` in
+44766         0xAEDE          Unix path: /usr/bin/file conftest.$ac_objext` in
+44899         0xAF63          Unix path: /usr/bin/file conftest.$ac_objext` in
+45034         0xAFEA          Unix path: /usr/bin/file conftest.$ac_objext` in
+45735         0xB2A7          Unix path: /usr/bin/file conftest.o` in
+45895         0xB347          Unix path: /usr/bin/file conftest.o` in
+47456         0xB960          Unix path: /usr/bin/file conftest.o` in
+55724         0xD9AC          Unix path: /usr/sbin/sysctl; then
+55776         0xD9E0          Unix path: /usr/sbin/sysctl -n kern.argmax`
+56849         0xDE11          Unix path: /etc/conf/cf.d/stune 2>/dev/null`
+75647         0x1277F         Unix path: /usr/local/lib"
+83268         0x14544         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+83365         0x145A5         Unix path: /usr/local/lib"
+83422         0x145DE         Unix path: /usr/contrib/lib and
+83447         0x145F7         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+84719         0x14AEF         Unix path: /usr/lib/w32api"])
+88239         0x158AF         Unix path: /usr/local/lib"])
+88287         0x158DF         Unix path: /usr/local/lib /lib /usr/lib'
+88784         0x15AD0         Unix path: /usr/bin/objformat; then
+88824         0x15AF8         Unix path: /usr/bin/objformat`
+91099         0x163DB         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+91186         0x16432         Unix path: /usr/lib/hpux32
+91243         0x1646B         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+91315         0x164B3         Unix path: /usr/lib/hpux64
+91779         0x16683         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+93991         0x16F27         Unix path: /usr/local/lib$libsuff"
+100020        0x186B4         Unix path: /usr/local/lib"
+100957        0x18A5D         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+102533        0x19085         Unix path: /usr/ccs/lib'
+103318        0x19396         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+103411        0x193F3         Unix path: /usr/ccs/lib /usr/lib'
+116468        0x1C6F4         Unix path: /usr/bin/file -L'
+118010        0x1CCFA         Unix path: /usr/bin/file
+118063        0x1CD2F         Unix path: /usr/lib/libc.so.*`
+118256        0x1CDF0         Unix path: /usr/bin/file
+118444        0x1CEAC         Unix path: /usr/lib/hpux32/libc.so
+118667        0x1CF8B         Unix path: /usr/lib/pa20_64/libc.sl
+118843        0x1D03B         Unix path: /usr/lib/libc.sl
+119793        0x1D3F1         Unix path: /usr/bin/file
+119836        0x1D41C         Unix path: /usr/lib/libnls.so
+120725        0x1D795         Unix path: /usr/lib/libc.so*`
+122907        0x1E01B         Unix path: /usr/ccs/bin/elf /usr/ccs/bin /usr/ucb /bin; do
+142646        0x22D36         Unix path: /lib/CC/libC.a $MVME_DIR/lib/classix/libcx.s.a"
+197387        0x3030B         Unix path: /usr/lib/c++rt0.o'
+205350        0x32226         Unix path: /usr/libexec/ld.so; then
+265097        0x40B89         Unix path: /usr/libexec/ld.so; then
+302326        0x49CF6         Unix path: /usr/xpg4/bin/sed as it is typically found on Solaris
+302458        0x49D7A         Unix path: /usr/xpg4/bin/sed; do
+304014        0x4A38E         Unix path: /usr/ucb/tr
+306577        0x4AD91         Copyright string: "Copyright (C) 2004-2005, 2007-2009, 2011-2015 Free Software"
+320900        0x4E584         Copyright string: "Copyright (C) 2004-2005, 2007-2008, 2011-2015 Free Software"
+325262        0x4F68E         Copyright string: "Copyright (C) 2004, 2011-2015 Free Software Foundation, Inc."
+325988        0x4F964         Copyright string: "Copyright (C) 2004-2005, 2007, 2009, 2011-2015 Free Software"
+326689        0x4FC21         Unix path: /usr/share/aclocal/libtool.m4 and remember it, then when it sees us
+332046        0x5110E         Copyright string: "Copyright (C) 2002-2018 Free Software Foundation, Inc."
+333612        0x5172C         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+336020        0x52094         Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+336979        0x52453         Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+344262        0x540C6         Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+346900        0x54B14         Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+354855        0x56A27         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+355460        0x56C84         Copyright string: "Copyright (C) 2003-2018 Free Software Foundation, Inc."
+356098        0x56F02         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+357538        0x574A2         Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+358694        0x57926         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+359707        0x57D1B         Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+361322        0x5836A         Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+370299        0x5A67B         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+371019        0x5A94B         Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+373588        0x5B354         Copyright string: "Copyright (C) 2009-2018 Free Software Foundation, Inc."
+375423        0x5BA7F         Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+376739        0x5BFA3         Copyright string: "Copyright (C) 2006-2018 Free Software Foundation, Inc."
+377416        0x5C248         Copyright string: "Copyright (C) 2004-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/test/gmock-generated-matchers_test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/test/gmock-generated-actions_test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/test/gmock-actions_test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/test/gmock-matchers_test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/test/gmock-spec-builders_test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/build-aux/config.guess =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+59            0x3B            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+1862          0x746           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+8867          0x22A3          Unix path: /usr/sbin/sizer -v | awk '{print $3}'`
+8935          0x22E7          Unix path: /usr/sbin/sizer -v | awk '{print $4}'`
+9009          0x2331          Unix path: /usr/sbin/psrinfo has been available on
+9255          0x2427          Unix path: /usr/sbin/psrinfo -v | sed -n -e 's/^  The alpha \(.*\) processor.*$/\1/p' | head -n 1`
+11682         0x2DA2          Unix path: /usr/bin/uname -p` in
+13092         0x3324          Unix path: /usr/bin/arch -k`" in
+16742         0x4166          Unix path: /usr/bin/uname -p`
+17833         0x45A9          Unix path: /usr/bin/oslevel ] ; then
+17870         0x45CE          Unix path: /usr/bin/oslevel`
+18021         0x4665          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18416         0x47F0          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18563         0x4883          Unix path: /usr/sbin/lsdev -C -c processor -S available | sed 1q | awk '{ print $1 }'`
+18643         0x48D3          Unix path: /usr/sbin/lsattr -El "$IBM_CPU_ID" | grep ' POWER' >/dev/null 2>&1; then
+18772         0x4954          Unix path: /usr/bin/lslpp ] ; then
+18807         0x4977          Unix path: /usr/bin/lslpp -Lqc bos.rte.libc |
+19774         0x4D3E          Unix path: /usr/bin/getconf ]; then
+19821         0x4D6D          Unix path: /usr/bin/getconf SC_CPU_VERSION 2>/dev/null`
+19888         0x4DB0          Unix path: /usr/bin/getconf SC_KERNEL_BITS 2>/dev/null`
+23245         0x5ACD          Unix path: /usr/sbin/sysversion ] ; then
+25559         0x63D7          Unix path: /usr/bin/uname -p`
+32540         0x7F1C          Unix path: /usr/include/link.h >/dev/null 2>/dev/null; then
+33061         0x8125          Unix path: /usr/options/cb.name; then
+33127         0x8167          Unix path: /usr/options/cb.name`
+34223         0x85AF          Unix path: /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
+43525         0xAA05          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null`
+43735         0xAAD7          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null`
+43844         0xAB44          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null`
+43902         0xAB7E          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null`
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/build-aux/config.sub =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+61            0x3D            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+2739          0xAB3           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/build-aux/ltmain.sh =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+274           0x112           Copyright string: "Copyright (C) 1996-2015 Free Software Foundation, Inc."
+2410          0x96A           Copyright string: "Copyright (C) 2004-2015 Free Software Foundation, Inc."
+8583          0x2187          Unix path: /usr/xpg4/bin
+9738          0x260A          Unix path: /usr/xpg4/bin
+40358         0x9DA6          Executable script, shebang: "/bin/sh"
+40540         0x9E5C          Copyright string: "Copyright (C) 2010-2015 Free Software Foundation, Inc."
+41693         0xA2DD          Executable script, shebang: "/bin/sh"
+134137        0x20BF9         Unix path: /usr/bin/install will append another
+134219        0x20C4B         Unix path: /usr/bin/install*,*cygwin*)
+237235        0x39EB3         Unix path: /usr/bin/file -L $add 2> /dev/null |
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/scripts/generator/cpp/ast.py =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/usr/bin/env python"
+2             0x2             Unix path: /usr/bin/env python
+26            0x1A            Copyright string: "Copyright 2007 Neal Norwitz"
+65            0x41            Copyright string: "Copyright 2007 Google Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/src/gmock-spec-builders.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googlemock/configure =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+208           0xD0            Copyright string: "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc."
+1001          0x3E9           Unix path: /usr/bin/printf.
+1655          0x677           Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+1745          0x6D1           Unix path: /usr/ucb/echo -n "$1$as_nl"'
+1789          0x6FD           Unix path: /usr/ucb/echo -n'
+47373         0xB90D          Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+60092         0xEABC          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+60313         0xEB99          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null  || echo unknown`
+60393         0xEBE9          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null || echo unknown`
+60473         0xEC39          Unix path: /usr/bin/hostinfo   = `(/usr/bin/hostinfo) 2>/dev/null   || echo unknown`
+60633         0xECD9          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null  || echo unknown`
+72541         0x11B5D         Unix path: /usr/sbin/install
+72567         0x11B77         Unix path: /usr/etc/install
+72696         0x11BF8         Unix path: /usr/bin/installbsd, which doesn't work without a -g flag
+72760         0x11C38         Unix path: /usr/afsws/bin/install, which mishandles nonexistent args
+72825         0x11C79         Unix path: /usr/ucb/install, which tries to use the nonexistent group "staff"
+73619         0x11F93         Unix path: /usr/afsws/bin/* | \
+82476         0x1422C         Unix path: /opt/sfw/bin
+94981         0x17305         Unix path: /usr/ucb/cc"; then
+140155        0x2237B         Unix path: /usr/xpg4/bin
+141614        0x2292E         Unix path: /usr/xpg4/bin" "$LINENO" 5
+142288        0x22BD0         Unix path: /usr/xpg4/bin
+143735        0x23177         Unix path: /usr/xpg4/bin" "$LINENO" 5
+144425        0x23429         Unix path: /usr/xpg4/bin
+145869        0x239CD         Unix path: /usr/xpg4/bin" "$LINENO" 5
+149847        0x24957         Unix path: /usr/ccs/bin/elf /usr/ccs/bin /usr/ucb /bin; do
+157592        0x26798         Unix path: /usr/sbin/sysctl; then
+157644        0x267CC         Unix path: /usr/sbin/sysctl -n kern.argmax`
+158717        0x26BFD         Unix path: /etc/conf/cf.d/stune 2>/dev/null`
+160906        0x2748A         Unix path: /usr/ucb/tr
+167888        0x28FD0         Unix path: /usr/bin/file -L'
+169428        0x295D4         Unix path: /usr/bin/file
+169481        0x29609         Unix path: /usr/lib/libc.so.*`
+169674        0x296CA         Unix path: /usr/bin/file
+169852        0x2977C         Unix path: /usr/lib/hpux32/libc.so
+170073        0x29859         Unix path: /usr/lib/pa20_64/libc.sl
+170239        0x298FF         Unix path: /usr/lib/libc.sl
+171171        0x29CA3         Unix path: /usr/bin/file
+171214        0x29CCE         Unix path: /usr/lib/libnls.so
+172079        0x2A02F         Unix path: /usr/lib/libc.so*`
+199949        0x30D0D         Unix path: /usr/bin/file conftest.$ac_objext` in
+200536        0x30F58         Unix path: /usr/bin/file conftest.$ac_objext` in
+200743        0x31027         Unix path: /usr/bin/file conftest.$ac_objext` in
+201345        0x31281         Unix path: /usr/bin/file conftest.$ac_objext` in
+201478        0x31306         Unix path: /usr/bin/file conftest.$ac_objext` in
+201613        0x3138D         Unix path: /usr/bin/file conftest.$ac_objext` in
+202492        0x316FC         Unix path: /usr/bin/file conftest.o` in
+202652        0x3179C         Unix path: /usr/bin/file conftest.o` in
+205272        0x321D8         Unix path: /usr/bin/file conftest.o` in
+302393        0x49D39         Unix path: /usr/lib/c++rt0.o'
+310497        0x4BCE1         Unix path: /usr/libexec/ld.so; then
+325734        0x4F866         Unix path: /usr/local/lib"
+333240        0x515B8         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+333337        0x51619         Unix path: /usr/local/lib"
+333394        0x51652         Unix path: /usr/contrib/lib and
+333419        0x5166B         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+334673        0x51B51         Unix path: /usr/lib/w32api"
+338163        0x528F3         Unix path: /usr/local/lib"
+338209        0x52921         Unix path: /usr/local/lib /lib /usr/lib'
+338706        0x52B12         Unix path: /usr/bin/objformat; then
+338746        0x52B3A         Unix path: /usr/bin/objformat`
+341007        0x5340F         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+341094        0x53466         Unix path: /usr/lib/hpux32
+341151        0x5349F         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+341223        0x534E7         Unix path: /usr/lib/hpux64
+341687        0x536B7         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+343897        0x53F59         Unix path: /usr/local/lib$libsuff"
+350098        0x55792         Unix path: /usr/local/lib"
+351035        0x55B3B         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+352611        0x56163         Unix path: /usr/ccs/lib'
+353396        0x56474         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+353489        0x564D1         Unix path: /usr/ccs/lib /usr/lib'
+422032        0x67090         Unix path: /usr/libexec/ld.so; then
+441807        0x6BDCF         Unix path: /lib/CC/libC.a $MVME_DIR/lib/classix/libcx.s.a"
+468601        0x72679         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+468698        0x726DA         Unix path: /usr/local/lib"
+468755        0x72713         Unix path: /usr/contrib/lib and
+468780        0x7272C         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+473425        0x73951         Unix path: /usr/local/lib /lib /usr/lib'
+473922        0x73B42         Unix path: /usr/bin/objformat; then
+473962        0x73B6A         Unix path: /usr/bin/objformat`
+476223        0x7443F         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+476310        0x74496         Unix path: /usr/lib/hpux32
+476367        0x744CF         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+476439        0x74517         Unix path: /usr/lib/hpux64
+476903        0x746E7         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+479113        0x74F89         Unix path: /usr/local/lib$libsuff"
+485328        0x767D0         Unix path: /usr/local/lib"
+486265        0x76B79         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+487841        0x771A1         Unix path: /usr/ccs/lib'
+488626        0x774B2         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+488719        0x7750F         Unix path: /usr/ccs/lib /usr/lib'
+493158        0x78666         Unix path: /usr/bin/env"
+523352        0x7FC58         Unix path: /usr/bin/printf.
+524006        0x7FEE6         Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+524096        0x7FF40         Unix path: /usr/ucb/echo -n "$1$as_nl"'
+524140        0x7FF6C         Unix path: /usr/ucb/echo -n'
+534442        0x827AA         Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+577221        0x8CEC5         Copyright string: "Copyright (C) 2014 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/fused-src/gtest/gtest-all.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+1907          0x773           Copyright string: "Copyright 2005, Google Inc."
+2179          0x883           Copyright string: "copyright"
+2322          0x912           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+3530          0xDCA           Copyright string: "Copyright 2007, Google Inc."
+3802          0xEDA           Copyright string: "copyright"
+3945          0xF69           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+15566         0x3CCE          Copyright string: "Copyright 2005, Google Inc."
+15838         0x3DDE          Copyright string: "copyright"
+15981         0x3E6D          Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+196301        0x2FECD         XML document, version: ""1."
+197834        0x304CA         XML document, version: ""1."
+279474        0x443B2         Copyright string: "Copyright 2005, Google Inc."
+279746        0x444C2         Copyright string: "copyright"
+279889        0x44551         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+340747        0x5330B         Copyright string: "Copyright 2008, Google Inc."
+341019        0x5341B         Copyright string: "copyright"
+341162        0x534AA         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+354764        0x569CC         Copyright string: "Copyright 2007, Google Inc."
+355036        0x56ADC         Copyright string: "copyright"
+355179        0x56B6B         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+360343        0x57F97         Copyright string: "Copyright 2008, Google Inc."
+360615        0x580A7         Copyright string: "copyright"
+360758        0x58136         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+404463        0x62BEF         Copyright string: "Copyright 2007, Google Inc."
+404735        0x62CFF         Copyright string: "copyright"
+404878        0x62D8E         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+419452        0x6667C         Copyright string: "Copyright 2008, Google Inc."
+419724        0x6678C         Copyright string: "copyright"
+419867        0x6681B         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+423370        0x675CA         Copyright string: "Copyright 2008 Google Inc."
+423641        0x676D9         Copyright string: "copyright"
+423784        0x67768         Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/m4/libtool.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+75            0x4B            Copyright string: "Copyright (C) 1996-2001, 2003-2015 Free Software Foundation, Inc."
+403           0x193           Copyright string: "Copyright (C) 2014 Free Software Foundation, Inc."
+20930         0x51C2          Copyright string: "Copyright (C) 2011 Free Software Foundation, Inc."
+42968         0xA7D8          Unix path: /usr/bin/file conftest.$ac_objext` in
+43379         0xA973          Unix path: /usr/bin/file conftest.$ac_objext` in
+43586         0xAA42          Unix path: /usr/bin/file conftest.$ac_objext` in
+44012         0xABEC          Unix path: /usr/bin/file conftest.$ac_objext` in
+44145         0xAC71          Unix path: /usr/bin/file conftest.$ac_objext` in
+44280         0xACF8          Unix path: /usr/bin/file conftest.$ac_objext` in
+44981         0xAFB5          Unix path: /usr/bin/file conftest.o` in
+45141         0xB055          Unix path: /usr/bin/file conftest.o` in
+46702         0xB66E          Unix path: /usr/bin/file conftest.o` in
+54970         0xD6BA          Unix path: /usr/sbin/sysctl; then
+55022         0xD6EE          Unix path: /usr/sbin/sysctl -n kern.argmax`
+56095         0xDB1F          Unix path: /etc/conf/cf.d/stune 2>/dev/null`
+74893         0x1248D         Unix path: /usr/local/lib"
+82514         0x14252         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+82611         0x142B3         Unix path: /usr/local/lib"
+82668         0x142EC         Unix path: /usr/contrib/lib and
+82693         0x14305         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+83965         0x147FD         Unix path: /usr/lib/w32api"])
+87485         0x155BD         Unix path: /usr/local/lib"])
+87533         0x155ED         Unix path: /usr/local/lib /lib /usr/lib'
+88030         0x157DE         Unix path: /usr/bin/objformat; then
+88070         0x15806         Unix path: /usr/bin/objformat`
+90345         0x160E9         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+90432         0x16140         Unix path: /usr/lib/hpux32
+90489         0x16179         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+90561         0x161C1         Unix path: /usr/lib/hpux64
+91025         0x16391         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+93237         0x16C35         Unix path: /usr/local/lib$libsuff"
+99266         0x183C2         Unix path: /usr/local/lib"
+100203        0x1876B         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+101779        0x18D93         Unix path: /usr/ccs/lib'
+102564        0x190A4         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+102657        0x19101         Unix path: /usr/ccs/lib /usr/lib'
+115714        0x1C402         Unix path: /usr/bin/file -L'
+117256        0x1CA08         Unix path: /usr/bin/file
+117309        0x1CA3D         Unix path: /usr/lib/libc.so.*`
+117502        0x1CAFE         Unix path: /usr/bin/file
+117690        0x1CBBA         Unix path: /usr/lib/hpux32/libc.so
+117913        0x1CC99         Unix path: /usr/lib/pa20_64/libc.sl
+118089        0x1CD49         Unix path: /usr/lib/libc.sl
+119039        0x1D0FF         Unix path: /usr/bin/file
+119082        0x1D12A         Unix path: /usr/lib/libnls.so
+119971        0x1D4A3         Unix path: /usr/lib/libc.so*`
+122153        0x1DD29         Unix path: /usr/ccs/bin/elf /usr/ccs/bin /usr/ucb /bin; do
+141892        0x22A44         Unix path: /lib/CC/libC.a $MVME_DIR/lib/classix/libcx.s.a"
+196633        0x30019         Unix path: /usr/lib/c++rt0.o'
+204596        0x31F34         Unix path: /usr/libexec/ld.so; then
+264533        0x40955         Unix path: /usr/libexec/ld.so; then
+302264        0x49CB8         Unix path: /usr/xpg4/bin/sed as it is typically found on Solaris
+302396        0x49D3C         Unix path: /usr/xpg4/bin/sed; do
+303952        0x4A350         Unix path: /usr/ucb/tr
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/aclocal.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+64            0x40            Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+1103          0x44F           Copyright string: "Copyright (C) 2002-2018 Free Software Foundation, Inc."
+2669          0xA6D           Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+5077          0x13D5          Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+6036          0x1794          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+13319         0x3407          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+15957         0x3E55          Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+23912         0x5D68          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+24517         0x5FC5          Copyright string: "Copyright (C) 2003-2018 Free Software Foundation, Inc."
+25155         0x6243          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+26595         0x67E3          Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+27751         0x6C67          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+28764         0x705C          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+30379         0x76AB          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+39356         0x99BC          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+40076         0x9C8C          Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+42645         0xA695          Copyright string: "Copyright (C) 2009-2018 Free Software Foundation, Inc."
+44480         0xADC0          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+45796         0xB2E4          Copyright string: "Copyright (C) 2006-2018 Free Software Foundation, Inc."
+46473         0xB589          Copyright string: "Copyright (C) 2004-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/xcode/gtest.xcodeproj/project.pbxproj =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+38446         0x962E          Unix path: /usr/bin/python Scripts/versiongenerate.py ../ $PROJECT_TEMP_DIR";
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/googletest-printers-test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2007, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/googletest-death-test-test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2005, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/gtest_pred_impl_unittest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2006, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/googletest-param-test-test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/googletest-output-test_.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2005, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/gtest_unittest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2005, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/test/googletest-port-test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/build-aux/config.guess =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+59            0x3B            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+1862          0x746           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+8867          0x22A3          Unix path: /usr/sbin/sizer -v | awk '{print $3}'`
+8935          0x22E7          Unix path: /usr/sbin/sizer -v | awk '{print $4}'`
+9009          0x2331          Unix path: /usr/sbin/psrinfo has been available on
+9255          0x2427          Unix path: /usr/sbin/psrinfo -v | sed -n -e 's/^  The alpha \(.*\) processor.*$/\1/p' | head -n 1`
+11682         0x2DA2          Unix path: /usr/bin/uname -p` in
+13092         0x3324          Unix path: /usr/bin/arch -k`" in
+16742         0x4166          Unix path: /usr/bin/uname -p`
+17833         0x45A9          Unix path: /usr/bin/oslevel ] ; then
+17870         0x45CE          Unix path: /usr/bin/oslevel`
+18021         0x4665          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18416         0x47F0          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18563         0x4883          Unix path: /usr/sbin/lsdev -C -c processor -S available | sed 1q | awk '{ print $1 }'`
+18643         0x48D3          Unix path: /usr/sbin/lsattr -El "$IBM_CPU_ID" | grep ' POWER' >/dev/null 2>&1; then
+18772         0x4954          Unix path: /usr/bin/lslpp ] ; then
+18807         0x4977          Unix path: /usr/bin/lslpp -Lqc bos.rte.libc |
+19774         0x4D3E          Unix path: /usr/bin/getconf ]; then
+19821         0x4D6D          Unix path: /usr/bin/getconf SC_CPU_VERSION 2>/dev/null`
+19888         0x4DB0          Unix path: /usr/bin/getconf SC_KERNEL_BITS 2>/dev/null`
+23245         0x5ACD          Unix path: /usr/sbin/sysversion ] ; then
+25559         0x63D7          Unix path: /usr/bin/uname -p`
+32540         0x7F1C          Unix path: /usr/include/link.h >/dev/null 2>/dev/null; then
+33061         0x8125          Unix path: /usr/options/cb.name; then
+33127         0x8167          Unix path: /usr/options/cb.name`
+34223         0x85AF          Unix path: /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
+43525         0xAA05          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null`
+43735         0xAAD7          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null`
+43844         0xAB44          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null`
+43902         0xAB7E          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null`
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/build-aux/config.sub =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+61            0x3D            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+2739          0xAB3           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/build-aux/ltmain.sh =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+274           0x112           Copyright string: "Copyright (C) 1996-2015 Free Software Foundation, Inc."
+2410          0x96A           Copyright string: "Copyright (C) 2004-2015 Free Software Foundation, Inc."
+8583          0x2187          Unix path: /usr/xpg4/bin
+9738          0x260A          Unix path: /usr/xpg4/bin
+40358         0x9DA6          Executable script, shebang: "/bin/sh"
+40540         0x9E5C          Copyright string: "Copyright (C) 2010-2015 Free Software Foundation, Inc."
+41693         0xA2DD          Executable script, shebang: "/bin/sh"
+134137        0x20BF9         Unix path: /usr/bin/install will append another
+134219        0x20C4B         Unix path: /usr/bin/install*,*cygwin*)
+237235        0x39EB3         Unix path: /usr/bin/file -L $add 2> /dev/null |
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/src/gtest-death-test.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2005, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/src/gtest-port.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2008, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/src/gtest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+3             0x3             Copyright string: "Copyright 2005, Google Inc."
+275           0x113           Copyright string: "copyright"
+418           0x1A2           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+137866        0x21A8A         XML document, version: ""1."
+139399        0x22087         XML document, version: ""1."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/googletest/configure =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+217           0xD9            Copyright string: "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc."
+1010          0x3F2           Unix path: /usr/bin/printf.
+1664          0x680           Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+1754          0x6DA           Unix path: /usr/ucb/echo -n "$1$as_nl"'
+1798          0x706           Unix path: /usr/ucb/echo -n'
+46128         0xB430          Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+58847         0xE5DF          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+59068         0xE6BC          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null  || echo unknown`
+59148         0xE70C          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null || echo unknown`
+59228         0xE75C          Unix path: /usr/bin/hostinfo   = `(/usr/bin/hostinfo) 2>/dev/null   || echo unknown`
+59388         0xE7FC          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null  || echo unknown`
+71297         0x11681         Unix path: /usr/sbin/install
+71323         0x1169B         Unix path: /usr/etc/install
+71452         0x1171C         Unix path: /usr/bin/installbsd, which doesn't work without a -g flag
+71516         0x1175C         Unix path: /usr/afsws/bin/install, which mishandles nonexistent args
+71581         0x1179D         Unix path: /usr/ucb/install, which tries to use the nonexistent group "staff"
+72375         0x11AB7         Unix path: /usr/afsws/bin/* | \
+81232         0x13D50         Unix path: /opt/sfw/bin
+93737         0x16E29         Unix path: /usr/ucb/cc"; then
+138911        0x21E9F         Unix path: /usr/xpg4/bin
+140370        0x22452         Unix path: /usr/xpg4/bin" "$LINENO" 5
+141044        0x226F4         Unix path: /usr/xpg4/bin
+142491        0x22C9B         Unix path: /usr/xpg4/bin" "$LINENO" 5
+143181        0x22F4D         Unix path: /usr/xpg4/bin
+144625        0x234F1         Unix path: /usr/xpg4/bin" "$LINENO" 5
+148603        0x2447B         Unix path: /usr/ccs/bin/elf /usr/ccs/bin /usr/ucb /bin; do
+156348        0x262BC         Unix path: /usr/sbin/sysctl; then
+156400        0x262F0         Unix path: /usr/sbin/sysctl -n kern.argmax`
+157473        0x26721         Unix path: /etc/conf/cf.d/stune 2>/dev/null`
+159662        0x26FAE         Unix path: /usr/ucb/tr
+166644        0x28AF4         Unix path: /usr/bin/file -L'
+168184        0x290F8         Unix path: /usr/bin/file
+168237        0x2912D         Unix path: /usr/lib/libc.so.*`
+168430        0x291EE         Unix path: /usr/bin/file
+168608        0x292A0         Unix path: /usr/lib/hpux32/libc.so
+168829        0x2937D         Unix path: /usr/lib/pa20_64/libc.sl
+168995        0x29423         Unix path: /usr/lib/libc.sl
+169927        0x297C7         Unix path: /usr/bin/file
+169970        0x297F2         Unix path: /usr/lib/libnls.so
+170835        0x29B53         Unix path: /usr/lib/libc.so*`
+198705        0x30831         Unix path: /usr/bin/file conftest.$ac_objext` in
+199292        0x30A7C         Unix path: /usr/bin/file conftest.$ac_objext` in
+199499        0x30B4B         Unix path: /usr/bin/file conftest.$ac_objext` in
+200101        0x30DA5         Unix path: /usr/bin/file conftest.$ac_objext` in
+200234        0x30E2A         Unix path: /usr/bin/file conftest.$ac_objext` in
+200369        0x30EB1         Unix path: /usr/bin/file conftest.$ac_objext` in
+201248        0x31220         Unix path: /usr/bin/file conftest.o` in
+201408        0x312C0         Unix path: /usr/bin/file conftest.o` in
+204028        0x31CFC         Unix path: /usr/bin/file conftest.o` in
+301339        0x4991B         Unix path: /usr/lib/c++rt0.o'
+309443        0x4B8C3         Unix path: /usr/libexec/ld.so; then
+324680        0x4F448         Unix path: /usr/local/lib"
+332186        0x5119A         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+332283        0x511FB         Unix path: /usr/local/lib"
+332340        0x51234         Unix path: /usr/contrib/lib and
+332365        0x5124D         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+333619        0x51733         Unix path: /usr/lib/w32api"
+337109        0x524D5         Unix path: /usr/local/lib"
+337155        0x52503         Unix path: /usr/local/lib /lib /usr/lib'
+337652        0x526F4         Unix path: /usr/bin/objformat; then
+337692        0x5271C         Unix path: /usr/bin/objformat`
+339953        0x52FF1         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+340040        0x53048         Unix path: /usr/lib/hpux32
+340097        0x53081         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+340169        0x530C9         Unix path: /usr/lib/hpux64
+340633        0x53299         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+342843        0x53B3B         Unix path: /usr/local/lib$libsuff"
+349044        0x55374         Unix path: /usr/local/lib"
+349981        0x5571D         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+351557        0x55D45         Unix path: /usr/ccs/lib'
+352342        0x56056         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+352435        0x560B3         Unix path: /usr/ccs/lib /usr/lib'
+420978        0x66C72         Unix path: /usr/libexec/ld.so; then
+440753        0x6B9B1         Unix path: /lib/CC/libC.a $MVME_DIR/lib/classix/libcx.s.a"
+467547        0x7225B         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+467644        0x722BC         Unix path: /usr/local/lib"
+467701        0x722F5         Unix path: /usr/contrib/lib and
+467726        0x7230E         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+472371        0x73533         Unix path: /usr/local/lib /lib /usr/lib'
+472868        0x73724         Unix path: /usr/bin/objformat; then
+472908        0x7374C         Unix path: /usr/bin/objformat`
+475169        0x74021         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+475256        0x74078         Unix path: /usr/lib/hpux32
+475313        0x740B1         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+475385        0x740F9         Unix path: /usr/lib/hpux64
+475849        0x742C9         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+478059        0x74B6B         Unix path: /usr/local/lib$libsuff"
+484274        0x763B2         Unix path: /usr/local/lib"
+485211        0x7675B         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+486787        0x76D83         Unix path: /usr/ccs/lib'
+487572        0x77094         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+487665        0x770F1         Unix path: /usr/ccs/lib /usr/lib'
+492104        0x78248         Unix path: /usr/bin/env"
+518168        0x7E818         Unix path: /usr/bin/printf.
+518822        0x7EAA6         Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+518912        0x7EB00         Unix path: /usr/ucb/echo -n "$1$as_nl"'
+518956        0x7EB2C         Unix path: /usr/ucb/echo -n'
+529267        0x81373         Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+572046        0x8BA8E         Copyright string: "Copyright (C) 2014 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/third_party/googletest/configure =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+221           0xDD            Copyright string: "Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc."
+1014          0x3F6           Unix path: /usr/bin/printf.
+1668          0x684           Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+1758          0x6DE           Unix path: /usr/ucb/echo -n "$1$as_nl"'
+1802          0x70A           Unix path: /usr/ucb/echo -n'
+41988         0xA404          Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+42947         0xA7C3          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null || echo unknown`
+43168         0xA8A0          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null  || echo unknown`
+43248         0xA8F0          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null || echo unknown`
+43328         0xA940          Unix path: /usr/bin/hostinfo   = `(/usr/bin/hostinfo) 2>/dev/null   || echo unknown`
+43488         0xA9E0          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null  || echo unknown`
+55160         0xD778          Unix path: /usr/sbin/install
+55186         0xD792          Unix path: /usr/etc/install
+55315         0xD813          Unix path: /usr/bin/installbsd, which doesn't work without a -g flag
+55379         0xD853          Unix path: /usr/afsws/bin/install, which mishandles nonexistent args
+55444         0xD894          Unix path: /usr/ucb/install, which tries to use the nonexistent group "staff"
+56238         0xDBAE          Unix path: /usr/afsws/bin/* | \
+65095         0xFE47          Unix path: /opt/sfw/bin
+79119         0x1350F         Unix path: /usr/bin/printf.
+79773         0x1379D         Unix path: /usr/ucb/echo -n -n $as_echo) 2>/dev/null`" = "X-n $as_echo"; then
+79863         0x137F7         Unix path: /usr/ucb/echo -n "$1$as_nl"'
+79907         0x13823         Unix path: /usr/ucb/echo -n'
+89892         0x15F24         Copyright string: "Copyright (C) 2012 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/benchmarks/datasets/google_message3/benchmark_message3_1.proto =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/benchmarks/datasets/google_message3/benchmark_message3_8.proto =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/benchmarks/Makefile.am =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+8353          0x20A1          Executable script, shebang: "/bin/bash' > java-benchmark"
+10937         0x2AB9          Executable script, shebang: "/bin/bash' > python-pure-python-benchmark"
+11569         0x2D31          Executable script, shebang: "/bin/bash' > python-cpp-reflection-benchmark"
+12252         0x2FDC          Executable script, shebang: "/bin/bash' > python-cpp-generated-code-benchmark"
+15992         0x3E78          Executable script, shebang: "/bin/bash' > go-benchmark"
+29423         0x72EF          Executable script, shebang: "/bin/bash' > generate-gogo-benchmark-code"
+30392         0x76B8          Executable script, shebang: "/bin/bash' > gogo-benchmark"
+35101         0x891D          Executable script, shebang: "/bin/bash' > php-benchmark"
+36010         0x8CAA          Executable script, shebang: "/bin/bash' > php-c-benchmark"
+37473         0x9261          Executable script, shebang: "/bin/bash' > pbjs-benchmark"
+38430         0x961E          Executable script, shebang: "/bin/bash' > js-benchmark"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/benchmarks/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+404576        0x62C60         Executable script, shebang: "/bin/bash' > java-benchmark"
+406438        0x633A6         Executable script, shebang: "/bin/bash' > python-pure-python-benchmark"
+407070        0x6361E         Executable script, shebang: "/bin/bash' > python-cpp-reflection-benchmark"
+407753        0x638C9         Executable script, shebang: "/bin/bash' > python-cpp-generated-code-benchmark"
+410031        0x641AF         Executable script, shebang: "/bin/bash' > go-benchmark"
+419609        0x66719         Executable script, shebang: "/bin/bash' > generate-gogo-benchmark-code"
+420578        0x66AE2         Executable script, shebang: "/bin/bash' > gogo-benchmark"
+423332        0x675A4         Executable script, shebang: "/bin/bash' > php-benchmark"
+424241        0x67931         Executable script, shebang: "/bin/bash' > php-c-benchmark"
+425703        0x67EE7         Executable script, shebang: "/bin/bash' > pbjs-benchmark"
+426660        0x682A4         Executable script, shebang: "/bin/bash' > js-benchmark"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/m4/libtool.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+75            0x4B            Copyright string: "Copyright (C) 1996-2001, 2003-2015 Free Software Foundation, Inc."
+403           0x193           Copyright string: "Copyright (C) 2014 Free Software Foundation, Inc."
+20930         0x51C2          Copyright string: "Copyright (C) 2011 Free Software Foundation, Inc."
+42968         0xA7D8          Unix path: /usr/bin/file conftest.$ac_objext` in
+43379         0xA973          Unix path: /usr/bin/file conftest.$ac_objext` in
+43586         0xAA42          Unix path: /usr/bin/file conftest.$ac_objext` in
+44012         0xABEC          Unix path: /usr/bin/file conftest.$ac_objext` in
+44145         0xAC71          Unix path: /usr/bin/file conftest.$ac_objext` in
+44280         0xACF8          Unix path: /usr/bin/file conftest.$ac_objext` in
+44981         0xAFB5          Unix path: /usr/bin/file conftest.o` in
+45141         0xB055          Unix path: /usr/bin/file conftest.o` in
+46702         0xB66E          Unix path: /usr/bin/file conftest.o` in
+54970         0xD6BA          Unix path: /usr/sbin/sysctl; then
+55022         0xD6EE          Unix path: /usr/sbin/sysctl -n kern.argmax`
+56095         0xDB1F          Unix path: /etc/conf/cf.d/stune 2>/dev/null`
+74893         0x1248D         Unix path: /usr/local/lib"
+82514         0x14252         Unix path: /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
+82611         0x142B3         Unix path: /usr/local/lib"
+82668         0x142EC         Unix path: /usr/contrib/lib and
+82693         0x14305         Unix path: /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
+83965         0x147FD         Unix path: /usr/lib/w32api"])
+87485         0x155BD         Unix path: /usr/local/lib"])
+87533         0x155ED         Unix path: /usr/local/lib /lib /usr/lib'
+88030         0x157DE         Unix path: /usr/bin/objformat; then
+88070         0x15806         Unix path: /usr/bin/objformat`
+90345         0x160E9         Unix path: /usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+90432         0x16140         Unix path: /usr/lib/hpux32
+90489         0x16179         Unix path: /usr/lib/hpux64 /usr/local/lib/hpux64"
+90561         0x161C1         Unix path: /usr/lib/hpux64
+91025         0x16391         Unix path: /usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
+93237         0x16C35         Unix path: /usr/local/lib$libsuff"
+99266         0x183C2         Unix path: /usr/local/lib"
+100203        0x1876B         Unix path: /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
+101779        0x18D93         Unix path: /usr/ccs/lib'
+102564        0x190A4         Unix path: /usr/local/lib /usr/gnu/lib /usr/ccs/lib /usr/lib /lib'
+102657        0x19101         Unix path: /usr/ccs/lib /usr/lib'
+115714        0x1C402         Unix path: /usr/bin/file -L'
+117256        0x1CA08         Unix path: /usr/bin/file
+117309        0x1CA3D         Unix path: /usr/lib/libc.so.*`
+117502        0x1CAFE         Unix path: /usr/bin/file
+117690        0x1CBBA         Unix path: /usr/lib/hpux32/libc.so
+117913        0x1CC99         Unix path: /usr/lib/pa20_64/libc.sl
+118089        0x1CD49         Unix path: /usr/lib/libc.sl
+119039        0x1D0FF         Unix path: /usr/bin/file
+119082        0x1D12A         Unix path: /usr/lib/libnls.so
+119971        0x1D4A3         Unix path: /usr/lib/libc.so*`
+122153        0x1DD29         Unix path: /usr/ccs/bin/elf /usr/ccs/bin /usr/ucb /bin; do
+141892        0x22A44         Unix path: /lib/CC/libC.a $MVME_DIR/lib/classix/libcx.s.a"
+196633        0x30019         Unix path: /usr/lib/c++rt0.o'
+204596        0x31F34         Unix path: /usr/libexec/ld.so; then
+264533        0x40955         Unix path: /usr/libexec/ld.so; then
+302264        0x49CB8         Unix path: /usr/xpg4/bin/sed as it is typically found on Solaris
+302396        0x49D3C         Unix path: /usr/xpg4/bin/sed; do
+303952        0x4A350         Unix path: /usr/ucb/tr
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/aclocal.m4 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+64            0x40            Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+1103          0x44F           Copyright string: "Copyright (C) 2002-2018 Free Software Foundation, Inc."
+2591          0xA1F           Copyright string: "Copyright (C) 2011-2018 Free Software Foundation, Inc."
+4659          0x1233          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+7067          0x1B9B          Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+8026          0x1F5A          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+15309         0x3BCD          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+17947         0x461B          Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+25902         0x652E          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+26507         0x678B          Copyright string: "Copyright (C) 2003-2018 Free Software Foundation, Inc."
+27170         0x6A22          Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+28802         0x7082          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+30242         0x7622          Copyright string: "Copyright (C) 1997-2018 Free Software Foundation, Inc."
+31398         0x7AA6          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+32411         0x7E9B          Copyright string: "Copyright (C) 1999-2018 Free Software Foundation, Inc."
+34026         0x84EA          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+34746         0x87BA          Copyright string: "Copyright (C) 1996-2018 Free Software Foundation, Inc."
+37315         0x91C3          Copyright string: "Copyright (C) 2009-2018 Free Software Foundation, Inc."
+39150         0x98EE          Copyright string: "Copyright (C) 2001-2018 Free Software Foundation, Inc."
+40466         0x9E12          Copyright string: "Copyright (C) 2006-2018 Free Software Foundation, Inc."
+41143         0xA0B7          Copyright string: "Copyright (C) 2004-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/BUILD =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/Makefile.am =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+81429         0x13E15         Unix path: /lib/google/protobuf/message_exts.rb   \
+81508         0x13E64         Unix path: /lib/google/protobuf/repeated_field.rb   \
+81587         0x13EB3         Unix path: /lib/google/protobuf/well_known_types.rb  \
+81666         0x13F02         Unix path: /lib/google/protobuf.rb   \
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/config.guess =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+59            0x3B            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+1862          0x746           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+8867          0x22A3          Unix path: /usr/sbin/sizer -v | awk '{print $3}'`
+8935          0x22E7          Unix path: /usr/sbin/sizer -v | awk '{print $4}'`
+9009          0x2331          Unix path: /usr/sbin/psrinfo has been available on
+9255          0x2427          Unix path: /usr/sbin/psrinfo -v | sed -n -e 's/^  The alpha \(.*\) processor.*$/\1/p' | head -n 1`
+11682         0x2DA2          Unix path: /usr/bin/uname -p` in
+13092         0x3324          Unix path: /usr/bin/arch -k`" in
+16742         0x4166          Unix path: /usr/bin/uname -p`
+17833         0x45A9          Unix path: /usr/bin/oslevel ] ; then
+17870         0x45CE          Unix path: /usr/bin/oslevel`
+18021         0x4665          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18416         0x47F0          Unix path: /usr/include/stdio.h >/dev/null 2>&1; then
+18563         0x4883          Unix path: /usr/sbin/lsdev -C -c processor -S available | sed 1q | awk '{ print $1 }'`
+18643         0x48D3          Unix path: /usr/sbin/lsattr -El "$IBM_CPU_ID" | grep ' POWER' >/dev/null 2>&1; then
+18772         0x4954          Unix path: /usr/bin/lslpp ] ; then
+18807         0x4977          Unix path: /usr/bin/lslpp -Lqc bos.rte.libc |
+19774         0x4D3E          Unix path: /usr/bin/getconf ]; then
+19821         0x4D6D          Unix path: /usr/bin/getconf SC_CPU_VERSION 2>/dev/null`
+19888         0x4DB0          Unix path: /usr/bin/getconf SC_KERNEL_BITS 2>/dev/null`
+23245         0x5ACD          Unix path: /usr/sbin/sysversion ] ; then
+25559         0x63D7          Unix path: /usr/bin/uname -p`
+32540         0x7F1C          Unix path: /usr/include/link.h >/dev/null 2>/dev/null; then
+33061         0x8125          Unix path: /usr/options/cb.name; then
+33127         0x8167          Unix path: /usr/options/cb.name`
+34223         0x85AF          Unix path: /usr/include/sys/uadmin.h >/dev/null 2>&1 ; then
+43525         0xAA05          Unix path: /usr/bin/uname -p = `(/usr/bin/uname -p) 2>/dev/null`
+43735         0xAAD7          Unix path: /usr/bin/arch -k  = `(/usr/bin/arch -k) 2>/dev/null`
+43844         0xAB44          Unix path: /usr/bin/oslevel  = `(/usr/bin/oslevel) 2>/dev/null`
+43902         0xAB7E          Unix path: /usr/convex/getsysinfo = `(/usr/convex/getsysinfo) 2>/dev/null`
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/config.sub =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+61            0x3D            Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+2739          0xAB3           Copyright string: "Copyright 1992-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+92025         0x16779         Unix path: /lib/google/protobuf/message_exts.rb   \
+92104         0x167C8         Unix path: /lib/google/protobuf/repeated_field.rb   \
+92183         0x16817         Unix path: /lib/google/protobuf/well_known_types.rb  \
+92262         0x16866         Unix path: /lib/google/protobuf.rb   \
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/ltmain.sh =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             Executable script, shebang: "/bin/sh"
+274           0x112           Copyright string: "Copyright (C) 1996-2015 Free Software Foundation, Inc."
+2410          0x96A           Copyright string: "Copyright (C) 2004-2015 Free Software Foundation, Inc."
+8583          0x2187          Unix path: /usr/xpg4/bin
+9738          0x260A          Unix path: /usr/xpg4/bin
+40358         0x9DA6          Executable script, shebang: "/bin/sh"
+40540         0x9E5C          Copyright string: "Copyright (C) 2010-2015 Free Software Foundation, Inc."
+41693         0xA2DD          Executable script, shebang: "/bin/sh"
+134137        0x20BF9         Unix path: /usr/bin/install will append another
+134219        0x20C4B         Unix path: /usr/bin/install*,*cygwin*)
+237235        0x39EB3         Unix path: /usr/bin/file -L $add 2> /dev/null |
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/conformance/third_party/jsoncpp/jsoncpp.cpp =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+529           0x211           Copyright string: "copyright in all"
+776           0x308           Copyright string: "Copyright (c) 2007-2010 by Baptiste Lepilleur, and is"
+1459          0x5B3           Copyright string: "Copyright (c) 2007-2010 Baptiste Lepilleur"
+1947          0x79B           Copyright string: "copyright notice and this permission notice shall be"
+2801          0xAF1           Copyright string: "copyright notice"
+3502          0xDAE           Copyright string: "Copyright 2007-2010 Baptiste Lepilleur"
+6669          0x1A0D          Copyright string: "Copyright 2007-2011 Baptiste Lepilleur"
+64100         0xFA64          Copyright string: "Copyright 2007-2010 Baptiste Lepilleur"
+69767         0x11087         Copyright string: "Copyright 2011 Baptiste Lepilleur"
+115281        0x1C251         Copyright string: "Copyright 2011 Baptiste Lepilleur"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/conformance/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+104761        0x19939         Executable script, shebang: "/bin/sh' > conformance-java"
+105343        0x19B7F         Executable script, shebang: "/bin/sh' > conformance-java-lite"
+105821        0x19D5D         Executable script, shebang: "/bin/sh' > conformance-csharp"
+106106        0x19E7A         Executable script, shebang: "/bin/sh' > conformance-php"
+106333        0x19F5D         Executable script, shebang: "/bin/sh' > conformance-php-c"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/conformance/binary_json_conformance_suite.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/Makefile.am =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/Makefile.in =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+84            0x54            Copyright string: "Copyright (C) 1994-2018 Free Software Foundation, Inc."
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/wire_format.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/repeated_field_unittest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/extension_set.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/unittest_enormous_descriptor.proto =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/descriptor.proto =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/io/tokenizer_unittest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/io/tokenizer.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+
+===== binwalk unpacked/protobuf-cpp-3.11.0/protobuf-3.11.0/src/google/protobuf/io/coded_stream_unittest.cc =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+58            0x3A            Copyright string: "Copyright 2008 Google Inc.  All rights reserved."
+378           0x17A           Copyright string: "copyright"
+521           0x209           Copyright string: "copyright notice, this list of conditions and the following disclaimer"
+

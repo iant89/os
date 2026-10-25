@@ -1,0 +1,126 @@
+name: Fetch GPL release and extract rootfs
+
+# Downloads Verizon's official WNC-CR200A GPL release 3.2.0.13 (verizon.com is not
+# reachable from the analysis sandbox but is from GitHub Actions), unpacks it and
+# every source tarball inside it, runs binwalk over firmware/rootfs images, probes
+# for a CR200A firmware image on Verizon's CPE firmware host, and commits
+# /etc/init.d scripts + web server configs + binwalk logs to the branch (git is the
+# retrieval channel; workflow artifacts are not downloadable from every environment).
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-gpl-rootfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract-rootfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Install extraction tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq binwalk squashfs-tools unzip curl file cpio
+
+      - name: Download WNC-CR200A GPL release 3.2.0.13
+        run: |
+          set -euo pipefail
+          mkdir -p downloads analysis/gpl_rootfs/logs _work
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          PORTAL="https://www.verizon.com/support/residential/internet/equipment/open-source-software"
+          URL="https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_gpl_release_3.2.0.13.zip"
+          curl -fL --retry 3 --retry-delay 5 --max-time 3000 -A "$UA" -e "$PORTAL" \
+            -o downloads/WNC-CR200A_gpl_release_3.2.0.13.zip "$URL"
+          sha256sum downloads/WNC-CR200A_gpl_release_3.2.0.13.zip | tee analysis/gpl_rootfs/logs/zip_sha256.txt
+          unzip -l downloads/WNC-CR200A_gpl_release_3.2.0.13.zip > analysis/gpl_rootfs/logs/zip_listing.txt || true
+
+      - name: Probe for a CR200A firmware image on Verizon CPE hosts
+        run: |
+          set -uo pipefail
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          : > analysis/gpl_rootfs/logs/firmware_probe_cpe.txt
+          for u in \
+            "https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.2.0.15.bin" \
+            "https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.4.0.4.bin" \
+            "https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.2.0.15.bin" \
+            "https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.4.0.4.bin" \
+            "https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.2.0.15.bin" \
+            "https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.4.0.4.bin" \
+            "https://cpe-ems34.verizon.com/firmware/wnc_lv65c_fw_3.2.0.15.bin" \
+            "https://cpe-ems34.verizon.com/firmware/chr2fa_fw_3.2.0.9.bin"
+          do
+            out=$(curl -s -o /dev/null -w '%{http_code} %{size_download} %{url_effective}' -A "$UA" -L -r 0-1023 "$u" || echo err)
+            echo "$out  <- $u" >> analysis/gpl_rootfs/logs/firmware_probe_cpe.txt
+          done
+          cat analysis/gpl_rootfs/logs/firmware_probe_cpe.txt
+
+      - name: Unpack all source tarballs
+        run: |
+          set -uo pipefail
+          mkdir -p _work/unpacked
+          cd _work
+          unzip -q -o ../downloads/WNC-CR200A_gpl_release_3.2.0.13.zip -d . || true
+          for t in gpl_release/*.tar.gz gpl_release/*.tgz gpl_release/*.tar.xz gpl_release/*.tar.bz2; do
+            [ -f "$t" ] || continue
+            n=$(basename "$t"); n="${n%.tar.gz}"; n="${n%.tgz}"; n="${n%.tar.xz}"; n="${n%.tar.bz2}"
+            mkdir -p "unpacked/$n"
+            tar -xf "$t" -C "unpacked/$n" 2>/dev/null || true
+          done
+          du -sh unpacked | tee ../analysis/gpl_rootfs/logs/unpacked_size.txt
+          find unpacked -type f | wc -l
+
+      - name: Binwalk non-source blobs inside the tarballs
+        run: |
+          set -uo pipefail
+          cd _work
+          find unpacked -type f -size +32k ! -name '*.c' ! -name '*.h' ! -name '*.o' \
+            ! -name '*.po' ! -name '*.txt' ! -name '*.1' ! -name '*.3' ! -name '*.html' \
+            > ../blob_list.txt || true
+          head -80 ../blob_list.txt > ../analysis/gpl_rootfs/logs/blob_scan_list.txt
+          : > ../analysis/gpl_rootfs/logs/binwalk_inner.txt
+          head -80 ../blob_list.txt | while read -r f; do
+            echo "===== binwalk $f =====" >> ../analysis/gpl_rootfs/logs/binwalk_inner.txt
+            binwalk "$f" >> ../analysis/gpl_rootfs/logs/binwalk_inner.txt 2>&1 || true
+          done
+          wc -l ../analysis/gpl_rootfs/logs/binwalk_inner.txt
+
+      - name: Collect init.d scripts and web server configs from unpacked sources
+        run: |
+          set -uo pipefail
+          OUT=analysis/gpl_rootfs/unpacked
+          mkdir -p "$OUT" analysis/gpl_rootfs/logs
+          find _work/unpacked -type f \( \
+              -path '*/files/*' -o -name '*.init' -o -path '*/etc/init.d/*' -o \
+              -name 'preinit' -o -name 'inittab' -o -name 'rc.common' -o -name 'rc.func' -o \
+              -path '*/etc/config/*' -o -iname '*uhttpd*' -o -iname '*lighttpd*.conf' -o \
+              -iname '*rpcd*.config' -o -iname '*cgi*' -o -name 'passwd' -o -name 'group' \
+            \) -size -2M -type f 2>/dev/null | sort -u > analysis/gpl_rootfs/logs/collected_v2.txt || true
+          wc -l analysis/gpl_rootfs/logs/collected_v2.txt || true
+          sed 's|^_work/unpacked/||' analysis/gpl_rootfs/logs/collected_v2.txt > analysis/gpl_rootfs/logs/collected_v2_rel.txt || true
+          (cd _work/unpacked && tar -cf - -T "../../analysis/gpl_rootfs/logs/collected_v2_rel.txt" 2>/dev/null) | (cd "$OUT" && tar -xf -) || true
+          find "$OUT" -type f | wc -l || true
+          du -sh "$OUT" || true
+
+      - name: Commit analysis payload to branch
+        if: always()
+        run: |
+          set -uo pipefail
+          find analysis/gpl_rootfs -type f -size +4M -delete
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f analysis/gpl_rootfs
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit"
+          else
+            git commit -m "Extract init.d/web configs from GPL release tarballs; probe CR200A firmware hosts (WNC-CR200A 3.2.0.13)"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

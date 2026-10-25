@@ -1,0 +1,96 @@
+{
+  "name": "firmware-analysis-lab",
+  "created": "2026-10-25",
+  "purpose": "Pinned, offline-reproducible firmware analysis toolchain for WNC-CR200A research (binwalk extraction, Ghidra RE, UART/JTAG bring-up).",
+  "platforms": { "os": ["Debian 12 (bookworm)", "Ubuntu 22.04 LTS", "Ubuntu 24.04 LTS"], "arch": "x86_64" },
+  "apt_packages": [
+    "build-essential", "cmake", "pkg-config", "git", "curl", "ca-certificates",
+    "python3", "python3-pip", "python3-venv", "python3-dev",
+    "zlib1g-dev", "liblzma-dev", "liblzo2-dev", "uuid-dev", "libssl-dev",
+    "squashfs-tools", "mtd-utils", "u-boot-tools", "cpio", "lzop", "p7zip-full", "unzip",
+    "file", "xxd", "hexedit", "bsdextrautils", "kmod", "usbutils", "udev",
+    "minicom", "picocom", "tio", "screen"
+  ],
+  "apt_packages_optional": [
+    "openjdk-21-jdk-headless|openjdk-17-jdk-headless",
+    "qemu-system-x86", "qemu-utils", "cloud-image-utils", "genisoimage",
+    "openocd"
+  ],
+  "tools": [
+    {
+      "name": "ghidra",
+      "version": "12.2",
+      "kind": "github-release",
+      "file": "ghidra_12.2_PUBLIC_20261016.zip",
+      "url": "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.2_build/ghidra_12.2_PUBLIC_20261016.zip",
+      "sha256": "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67",
+      "size": 569712708,
+      "requires": "JDK 21+ (openjdk-21-jdk-headless)",
+      "install": "unzip to /opt/ghidra/, symlink /opt/ghidra/current"
+    },
+    {
+      "name": "binwalk",
+      "version": "2.3.3 (tag v2.3.3)",
+      "kind": "git-tarball",
+      "file": "binwalk-2.3.3.tar.gz",
+      "url": "https://codeload.github.com/ReFirmLabs/binwalk/tar.gz/refs/tags/v2.3.3",
+      "sha256": "7e32b94dc77632b51d18732b5456e2a3ef85e4521d7d4a54410e36f93859501f",
+      "install": "pip install <tarball> into the lab venv (binwalk CLI on venv bin path)"
+    },
+    {
+      "name": "sasquatch",
+      "version": "git b34aa5ef67068a2137ac04e2272915bd45388260",
+      "kind": "git-tarball",
+      "file": "sasquatch-b34aa5ef.tar.gz",
+      "url": "https://codeload.github.com/onekey-sec/sasquatch/tar.gz/b34aa5ef67068a2137ac04e2272915bd45388260",
+      "sha256": "74844a1d9be50da108e9b37734414ef252f7aaf97ea0b3cf3f1e814046d4c9e0",
+      "install": "make; install sasquatch binary (patched unsquashfs for vendor squashfs variants)"
+    },
+    {
+      "name": "firmware-mod-kit",
+      "version": "git c72f45d7a062156125ae00cb867d8a614b50b963",
+      "kind": "git-tarball",
+      "file": "firmware-mod-kit-c72f45d7.tar.gz",
+      "url": "https://codeload.github.com/rampageX/firmware-mod-kit/tar.gz/c72f45d7a062156125ae00cb867d8a614b50b963",
+      "sha256": "c6797d02445a0ff3dc764fd1b82b932ef5a20110fef35ab6d158581101769184",
+      "install": "extract to <prefix>/src/firmware-mod-kit; build best-effort (legacy, may fail on new gcc — unblob is the primary extractor)"
+    },
+    {
+      "name": "yaffshiv",
+      "version": "git a8f21283c25057740371fd34e9b6f3c4771375f1",
+      "kind": "git-tarball",
+      "file": "yaffshiv-a8f21283.tar.gz",
+      "url": "https://codeload.github.com/onekey-sec/yaffshiv/tar.gz/a8f21283c25057740371fd34e9b6f3c4771375f1",
+      "sha256": "4fa34f0612f2f938cab7f30e3a0208005c199b917997af304215c9db0c5ca0fa",
+      "install": "copy yaffshiv.py to <prefix>/bin/yaffshiv"
+    },
+    {
+      "name": "unblob",
+      "version": "26.6.4",
+      "kind": "pypi",
+      "file": "unblob-26.6.4.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/b0/71/30a7ff4b91e99e45a9df491cd16d048ce50d2e2998c1dbdd3a0ba6558f5f/unblob-26.6.4.tar.gz",
+      "sha256": "5dac92c617912d77fef471b28df86cdd7aa3817de3b6febd9bb9251fb41552fa",
+      "install": "pip install into the lab venv (modern, maintained extractor — primary)"
+    },
+    {
+      "name": "jefferson",
+      "version": "0.4.8",
+      "kind": "pypi",
+      "file": "jefferson-0.4.8.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/f5/4e/4ed99ac8d89090fae572188e59a4114d337076bfac5928992c3531002790/jefferson-0.4.8.tar.gz",
+      "sha256": "269edb74a9c89b69415a8ece852b193a9565251ec9f92f8b4ccf70082ec2ce71",
+      "install": "pip install into the lab venv (JFFS2 extractor)"
+    },
+    {
+      "name": "ubi-reader",
+      "version": "0.8.16",
+      "kind": "pypi",
+      "file": "ubi_reader-0.8.16.tar.gz",
+      "url": "https://files.pythonhosted.org/packages/49/3a/fbad252043b1a67e6ecafc77cf4c7f4068da0572778815b745d3774bea2d/ubi_reader-0.8.16.tar.gz",
+      "sha256": "d6d81b19c3ddd81e21d83a5aa19f9dfa1f6e61bf39d866cea4bd0581b243bd39",
+      "install": "pip install into the lab venv (UBI/UBIFS extractor)"
+    }
+  ],
+  "pip_offline_bundle": "pip download -d <bundle>/pip unblob==26.6.4 jefferson==0.4.8 ubi-reader==0.8.16  (resolves the full dependency closure)"
+}

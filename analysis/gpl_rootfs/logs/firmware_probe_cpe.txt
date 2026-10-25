@@ -1,0 +1,8 @@
+000 0 https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.2.0.15.binerr  <- https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.2.0.15.bin
+000 0 https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.4.0.4.binerr  <- https://cpe-ems34.verizon.com/firmware/cr200a_fw_3.4.0.4.bin
+000 0 https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.2.0.15.binerr  <- https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.2.0.15.bin
+000 0 https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.4.0.4.binerr  <- https://cpe-ems34.verizon.com/firmware/WNC/cr200a_fw_3.4.0.4.bin
+000 0 https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.2.0.15.binerr  <- https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.2.0.15.bin
+000 0 https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.4.0.4.binerr  <- https://cpe-ems34.verizon.com/firmware/lv65c_fw_3.4.0.4.bin
+000 0 https://cpe-ems34.verizon.com/firmware/wnc_lv65c_fw_3.2.0.15.binerr  <- https://cpe-ems34.verizon.com/firmware/wnc_lv65c_fw_3.2.0.15.bin
+000 0 https://cpe-ems34.verizon.com/firmware/chr2fa_fw_3.2.0.9.binerr  <- https://cpe-ems34.verizon.com/firmware/chr2fa_fw_3.2.0.9.bin

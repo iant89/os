@@ -1,0 +1,6 @@
+_work/gpl/gpl_release/cgi-io-19.tar.gz
+_work/gpl/gpl_release/lighttpd-1.4.65.tar.xz
+_work/gpl/gpl_release/rpcd-2019-12-10-aaa08366.tar.xz
+_work/gpl/gpl_release/rpcd-mod-luci-20191114.tar.gz
+_work/gpl/gpl_release/rpcd-mod-rrdns-20170710.tar.gz
+_work/gpl/gpl_release/uclient-2019-05-30-3b3e368d.tar.xz

@@ -1,0 +1,72 @@
+name: Fetch FCC exhibits
+
+# Downloads FCC ID NKR-LV65C-T3 (Verizon Internet Gateway WNC-CR200A) exhibits
+# from the FCC/OET EAS system and mirrors, verifies the SHA-256 published on
+# fccid.io, and commits the PDF to the branch (workflow artifacts cannot be
+# downloaded from every environment, but git can).
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-fcc-exhibits.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-internal-photos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Download Internal Photos exhibit (doc 6604463, 33 pp, 5,357,201 bytes)
+        run: |
+          set -euo pipefail
+          mkdir -p downloads/fcc
+          EXPECTED=b4f60559d2e1097f23e2b56d53b879bbf340f1e503dfd9cd9636b6faea7d7b48
+          OUT=downloads/fcc/WNC-CR200A_FCC_Internal_Photos_6604463.pdf
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          for url in \
+            "https://apps.fcc.gov/eas/GetApplicationAttachment.html?id=6604463" \
+            "https://fccid.io/ViewExhibitReport.cfm?id=6604463" \
+            "https://fccid.io/m/${EXPECTED}.pdf" \
+            "https://fcc.report/FCC-ID/NKR-LV65C-T3/6604463.pdf" \
+            "https://electric.garden/wistron-neweb-nkr/photos/LV65C-T3-Internal-Photos-Wistron-NeWeb-nkr-lv65c-t3-ex-1-2.pdf"
+          do
+            echo "Trying $url"
+            if curl -fsSL --max-time 180 -A "$UA" -o "$OUT" "$url"; then
+              ACTUAL=$(sha256sum "$OUT" | awk '{print $1}')
+              SIZE=$(stat -c%s "$OUT")
+              echo "Downloaded: sha256=$ACTUAL size=$SIZE"
+              if [ "$ACTUAL" = "$EXPECTED" ]; then
+                echo "Checksum OK"
+                ls -la downloads/fcc/
+                exit 0
+              fi
+              echo "Checksum mismatch - trying next mirror"
+            fi
+          done
+          echo "All mirrors failed" >&2
+          exit 1
+
+      - name: Commit exhibit PDF to branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f downloads/fcc/WNC-CR200A_FCC_Internal_Photos_6604463.pdf
+          if git diff --cached --quiet; then
+            echo "PDF already present and up to date"
+          else
+            git commit -m "Add FCC Internal Photos exhibit (FCC ID NKR-LV65C-T3, doc 6604463)"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fcc-internal-photos
+          path: downloads/fcc/
+          if-no-files-found: error

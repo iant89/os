@@ -1,0 +1,27 @@
+# 99-firmware-lab-serial.rules — udev rules for firmware-lab UART/JTAG adapters.
+# Install: sudo cp udev/99-firmware-lab-serial.rules /etc/udev/rules.d/ && sudo udevadm control --reload-rules
+# Creates /dev/firmware-uart* symlinks so scripts can use a stable device name.
+#
+# Adapter logic levels: CP2102(N) is 3.3 V native. FT232RL/FT232H boards expose a
+# VCCIO jumper — SET IT TO 3.3 V before wiring to a target. Never feed the target
+# from the adapter's VCC pin.
+
+# --- Silicon Labs CP2102 / CP2102N (very common "USB-UART" dongles) ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", SYMLINK+="firmware-uart", GROUP="dialout", MODE="0660"
+
+# --- FTDI FT232R / FT232RL (single-port) ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", SYMLINK+="firmware-uart", GROUP="dialout", MODE="0660"
+# FTDI FT232H (single-port, high-speed; JTAG-capable) ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6014", SYMLINK+="firmware-uart", GROUP="dialout", MODE="0660"
+
+# --- FTDI FT2232D/H dual-port (channel A=JTAG, channel B=UART is the usual mapping) ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6010", SYMLINK+="firmware-uart-$kernel", GROUP="dialout", MODE="0660"
+# FTDI FT4232H quad-port ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6011", SYMLINK+="firmware-uart-$kernel", GROUP="dialout", MODE="0660"
+
+# --- WCH CH340/CH341 (cheap clones; fine for 3.3 V targets) ---
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", SYMLINK+="firmware-uart", GROUP="dialout", MODE="0660"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="5523", SYMLINK+="firmware-uart-$kernel", GROUP="dialout", MODE="0660"
+
+# --- FTDI FT2232/FT4232/FT232H interface devices (OpenOCD/JTAG access via libftdi) ---
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0403", MODE="0660", GROUP="dialout", TAG+="uaccess"

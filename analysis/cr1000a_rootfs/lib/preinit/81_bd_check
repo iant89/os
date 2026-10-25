@@ -1,0 +1,112 @@
+#!/bin/sh
+# Copyright (C) 2021 Arcadyan
+
+APPSBLENV=/dev/mmcblk0p14
+BACKUP_DB=/dev/mmcblk0p29
+BD_SIZE=0x40000
+
+##
+# Function: do_crc_check
+# Input: $1 (dev)
+# Return: 0/1 (success/fail)
+##
+do_crc_check(){
+	local crcCheckPass=0
+	local bd_dev=$1
+
+	echo "$bd_dev 0x0 $BD_SIZE" > /etc/fw_env.config
+	crcCheckPass=$(fw_printenv | grep -c adminpass)
+	if [ "$crcCheckPass" = "1" ]; then
+		echo "PASS"
+		return 0
+	else
+		echo "Bad CRC, will be restored through another partition"
+		return 1
+	fi
+}
+
+##
+# Function: do_restore
+# Input: $1 (source dev), $2 (destination dev)
+# Return: N/A
+##
+do_restore(){
+	local src_dev=$1
+	local dst_dev=$2
+	echo "Restored source:$src_dev, destination:$dst_dev"
+	dd if=$src_dev of=$dst_dev bs=1 count=$(echo $(($BD_SIZE)))
+	echo "Restored Done"
+}
+
+##
+# Function: get_crc
+# Input: $1 (dev)
+# Return: crc value
+##
+get_crc(){
+	local bd_dev=$1
+	local bd_crc_file=/tmp/${bd_dev:5:10}"_crc"
+
+	dd if=$bd_dev of=$bd_crc_file bs=1 count=4 &>/dev/null
+}
+
+##
+# Function: compare_crc
+# Input: N/A
+# Return: 0/1 (same/different)
+##
+compare_crc(){
+	local appsblenv_crc_file=/tmp/${APPSBLENV:5:10}"_crc"
+	local backup_crc_file=/tmp/${BACKUP_DB:5:10}"_crc"
+	local return
+
+	get_crc $APPSBLENV
+	get_crc $BACKUP_DB
+	return=$(diff $appsblenv_crc_file $backup_crc_file)
+	if [ "$return" = "" ]; then
+		echo Comparing CRC is the same
+		return 0
+	else
+		echo Comparing CRC is different
+		return 1
+	fi
+}
+
+enable_fw_env(){
+	mkdir var/lock
+	touch /var/lock/fw_printenv.lock
+}
+
+disable_fw_env(){
+	rm /var/lock/fw_printenv.lock
+}
+
+do_bd_check() {
+	enable_fw_env
+	echo "Check CRC of APPSBLENV"
+	do_crc_check $APPSBLENV
+	if [ "$?" = "1" ]; then
+		echo "Check CRC of BACKUP_DB"
+		do_crc_check $BACKUP_DB
+		if [ "$?" = "0" ]; then
+			do_restore $BACKUP_DB $APPSBLENV
+			return 0
+		else
+			echo "BACKUP_DB is also broken!"
+			return 1
+		fi
+	fi
+	echo "Check CRC of BACKUP_DB"
+	do_crc_check $BACKUP_DB
+	if [ "$?" = "1" ]; then
+		do_restore $APPSBLENV $BACKUP_DB
+		return 0
+	fi
+	compare_crc
+	if [ "$?" = "1" ]; then
+		do_restore $BACKUP_DB $APPSBLENV
+	fi
+	disable_fw_env
+}
+
+boot_hook_add preinit_main do_bd_check

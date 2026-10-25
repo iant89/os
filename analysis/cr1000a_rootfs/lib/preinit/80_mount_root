@@ -1,0 +1,64 @@
+#!/bin/sh
+# Copyright (C) 2006 OpenWrt.org
+# Copyright (C) 2010 Vertical Communications
+
+find_mmc_uuid() {
+	cat /proc/cmdline | sed 's/.*root=PARTUUID=\([^ ]*\).*/\1/g'
+}
+
+find_mmc_part_by_partuuid() {
+	blkid | grep "$1" | sed 's/\([^:]*\).*/\1/g'
+}
+
+part_name() {
+	blkid | grep "$1" | sed 's/.*PARTLABEL=\"\([^"]*\).*/\1/g'
+}
+
+do_mount_root() {
+	echo "Before mount_root"
+	PARTUUID=$(find_mmc_uuid)
+	PART=$(find_mmc_part_by_partuuid $PARTUUID)
+	PARTNAME=$(part_name $PARTUUID)
+	if [ $PARTNAME = "rootfs" ]; then
+		BACKUPPART_NAME=\"rootfs_1\"
+	else
+		BACKUPPART_NAME=\"rootfs\"
+	fi
+	BACKUPPART=$(find_mmc_part_by_partuuid $BACKUPPART_NAME)
+
+	# Decrypt the master key for backup partition at background
+	echo "Decrypt backup partition at background"
+	echo "YES" | cryptsetup luksDump --dump-master-key --key-file /etc/keyfile $BACKUPPART 2>/tmp/error 1>/tmp/dump_key &
+
+	# Decrypt the boot partition and mount
+	cryptsetup --key-file=/etc/keyfile luksOpen $PART rootfs
+	if [ -e /dev/mapper/rootfs ]; then
+		mount -t squashfs /dev/mapper/rootfs /mnt/root
+	else
+		echo "Decrypt failed."
+		ash --login
+	fi
+	echo "After mount_root"
+
+	# Decrypt the backup partition with master to extract the backup partition version
+	# Check if the master key is ready
+	DMPID=$!
+	wait $DMPID && echo "Accessing key for backup partition"
+	errMsg=$(cat /tmp/error)
+	if [ "$errMsg" != "" ]; then
+		echo "Get key fail, ERROR: $errMsg"
+		rm /tmp/error /tmp/dump_key
+	else
+		echo -ne "$(cat /tmp/dump_key | grep "MK dump" -A4 | sed 's/MK dump://g' | tr -d " " | tr -d '\t' | tr -d '\n' | sed -e 's/../\\x&/g')" > /tmp/master_key
+		cryptsetup luksOpen --master-key-file /tmp/master_key $BACKUPPART rootfs_backup
+		if [ -e /dev/mapper/rootfs_backup ]; then
+			mount -t squashfs /dev/mapper/rootfs_backup /mnt/rootfs_backup
+			cat /mnt/rootfs_backup/etc/config/hal | grep " fw_version " | cut -d ' ' -f3 | sed "s/'//g" > /tmp/backup_partition
+			umount /mnt/rootfs_backup
+			cryptsetup luksClose rootfs_backup
+		fi
+		rm -rf /tmp/error /tmp/dump_key /tmp/master_key
+	fi
+}
+
+[ "$INITRAMFS" = "1" ] || boot_hook_add preinit_main do_mount_root
