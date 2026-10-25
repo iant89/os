@@ -1,0 +1,118 @@
+config interface 'wan'
+	option classgroup 'Default'
+	option enabled '1'
+# tier rate is end user subscription rate and for display or reference only
+	option tier_us '999000'
+	option tier_ds '998000'
+# upload/download for rate shaper
+	option upload '997000'
+	option download '996000'
+	option en_us_rate_shaping '0'
+	option en_ds_rate_shaping '0'
+
+config classgroup 'Default'
+	option classes 'Priority Gaming1 Gaming2 Gaming3 Express Normal Bulk Local'
+	option default 'Normal'
+	option comment "default no mark"
+
+config class 'Priority'
+	option disable_packetsize '400'
+	option avgrate '10'
+	option limitrate '10' 			# %
+	option priority '7'
+	option MARK '7'
+
+config class 'Gaming1'
+	option disable_packetsize '1000'
+	option avgrate '10'
+	option limitrate '10' 			# %
+	option priority '6'
+	option DSCP '0x28'				# DSCP is required by WMM priority
+	option MARK '6'
+
+config class 'Gaming2'
+	option disable_packetsize '1000'
+	option avgrate '10'
+	option limitrate '10'			# %
+	option priority '6'
+	option DSCP '0x28'
+	option MARK '5'
+
+config class 'Gaming3'
+	option disable_packetsize '1000'
+	option avgrate '10'
+	option limitrate '10'			# %
+	option priority '6'
+	option DSCP '0x28'
+	option MARK '4'
+
+config class 'Express'
+	option disable_packetsize '1000'
+	option avgrate '30'
+	option priority '3'
+	option MARK '3'
+	option DSCP '0x28'
+
+config class 'Normal'
+	option disable_packetsize '1500'
+	option disable_packetdelay '100'
+	option avgrate '20'
+	option priority '2'
+	option MARK '2'
+	option cls_comment 'LAN-WAN traffic default class'
+
+config class 'Bulk'
+	option disable_avgrate '1'
+	option disable_packetdelay '200'
+	option priority '1'
+	option MARK '1'
+	option DSCP '0x10'
+	option cls_comment 'guest Wi-Fi, background'
+
+config class 'Local'
+	option disable_avgrate '1'
+	option disable_packetdelay '200'
+	option priority '0'
+	option MARK '0'
+	option class_comment 'LAN local traffic class for HW queue'
+
+config reclassify
+	option target 'Express'
+	option ipver '4'
+	option direction out
+	option macro 'match_mark_mask_managed_dev'
+	option clsfy_comment 'VZ STB'
+
+config classify 'ClsfyGaming1'
+	option disabled '1'
+	option all_disabled '1'
+	option target 'Gaming1'
+	option gmac ''
+	option disable_proto 'udp'
+
+config classify 'ClsfyGaming2'
+	option disabled '1'
+	option all_disabled '1'
+	option target 'Gaming2'
+	option gmac ''
+
+config classify 'ClsfyGaming3'
+	option disabled '1'
+	option all_disabled '1'
+	option target 'Gaming3'
+	option gmac ''
+
+config reclassify
+	option target 'Normal'
+	option ipver '4'
+	option disable_srchost vz_zenreach_ipmask
+	option srciface 'br-lan2'
+	option clsfy_comment 'VZ Zenreach'
+
+config reclassify
+	option target 'Bulk'
+	option ipver '4'
+	option disable_srchost vz_guestwifi_ipmask
+	option srciface 'br-lan1'
+	option clsfy_comment 'VZ Guest WiFi'
+
