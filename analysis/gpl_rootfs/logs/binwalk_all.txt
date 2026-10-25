@@ -1,0 +1,437 @@
+===== binwalk ./gpl_release/LVM2.2.03.02.tgz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2018-12-18 14:22:56
+
+===== binwalk ./gpl_release/attr-2.4.48.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/avahi-0.8.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2020-02-18 07:11:07
+
+===== binwalk ./gpl_release/busybox-1.30.1.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+
+===== binwalk ./gpl_release/bzip2-1.0.8.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, has original file name: "bzip2-1.0.8.tar", from Unix, last modified: 2019-07-13 17:50:27
+
+===== binwalk ./gpl_release/c-ares-1.15.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2018-10-23 20:48:05
+
+===== binwalk ./gpl_release/cryptsetup-1.7.5.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+908638        0xDDD5E         bzip2 compressed data, block size = 900k
+
+===== binwalk ./gpl_release/curl-7.64.1.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+
+===== binwalk ./gpl_release/dbus-1.12.12.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2018-12-04 15:49:12
+
+===== binwalk ./gpl_release/dhcp-4.4.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2018-02-21 15:54:04
+6047926       0x5C48B6        JBOOT STAG header, image id: 13, timestamp 0x9B7EB166, image size: 2881336563 bytes, image JBOOT checksum: 0x7BA3, header JBOOT checksum: 0x47FA
+6826460       0x6829DC        JBOOT STAG header, image id: 5, timestamp 0xFD209CA, image size: 2967898144 bytes, image JBOOT checksum: 0x3FE7, header JBOOT checksum: 0x3C48
+
+===== binwalk ./gpl_release/fcgi-2.4.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2003-01-19 17:22:54
+
+===== binwalk ./gpl_release/fuse-2.9.7.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2016-06-20 19:53:21
+
+===== binwalk ./gpl_release/gettext-0.19.8.1.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+3731672       0x38F0D8        XAR archive, version: -11476, header size: 18028, TOC compressed: 15261682465570119439, TOC uncompressed: 8213550919705410533
+5787476       0x584F54        JBOOT STAG header, image id: 0, timestamp 0x6CE64DB3, image size: 392471290 bytes, image JBOOT checksum: 0x666, header JBOOT checksum: 0xA739
+
+===== binwalk ./gpl_release/glib-2.58.3.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+1319361       0x1421C1        JBOOT STAG header, image id: 16, timestamp 0xE5BDBD10, image size: 362163464 bytes, image JBOOT checksum: 0x8F71, header JBOOT checksum: 0x77E
+
+===== binwalk ./gpl_release/gmp-6.1.2.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+
+===== binwalk ./gpl_release/iperf-2.0.13.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-01-22 20:34:33
+
+===== binwalk ./gpl_release/iperf-3.7.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-06-21 02:45:04
+
+===== binwalk ./gpl_release/jansson-2.7.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2014-10-02 10:55:45
+
+===== binwalk ./gpl_release/json-c-0.13.1-nodoc.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2018-03-06 04:19:50
+
+===== binwalk ./gpl_release/libarchive-3.4.2.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+
+===== binwalk ./gpl_release/libdaemon-0.14.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2009-10-18 02:47:06
+
+===== binwalk ./gpl_release/libedit-20191025-3.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-10-25 20:16:11
+
+===== binwalk ./gpl_release/libevent-2.1.11-stable.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/libffi-3.2.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2014-11-12 12:01:49
+
+===== binwalk ./gpl_release/libgcrypt-1.7.10.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+1040253       0xFDF7D         JBOOT STAG header, image id: 14, timestamp 0x1ED14DC3, image size: 166632167 bytes, image JBOOT checksum: 0x9778, header JBOOT checksum: 0x4550
+2651930       0x28771A        JBOOT STAG header, image id: 4, timestamp 0x75560880, image size: 1641654413 bytes, image JBOOT checksum: 0xF67B, header JBOOT checksum: 0x6201
+2670474       0x28BF8A        MPEG transport stream data
+
+===== binwalk ./gpl_release/libiconv-1.11.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, has original file name: "libiconv-1.11.1.tar", from Unix, last modified: 2007-12-08 09:49:51
+
+===== binwalk ./gpl_release/libnl-3.4.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2017-10-09 11:16:35
+
+===== binwalk ./gpl_release/libpcap-1.9.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2019-09-30 16:08:59
+
+===== binwalk ./gpl_release/libroxml-2.3.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2014-01-30 21:12:01
+
+===== binwalk ./gpl_release/libstrophe-0.9.2.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/libwebsockets-3.1.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+1660492       0x19564C        Zip archive data, at least v2.0 to extract, compressed size: 56456, uncompressed size: 56916, name: images/002_th.jpg
+5842499       0x592643        Zip archive data, at least v2.0 to extract, compressed size: 56456, uncompressed size: 56916, name: images/002_th.jpg
+
+===== binwalk ./gpl_release/libxml2-2.9.9.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-01-03 18:12:48
+1966654       0x1E023E        JBOOT STAG header, image id: 2, timestamp 0x6E55067A, image size: 791667613 bytes, image JBOOT checksum: 0xEFF1, header JBOOT checksum: 0x37AB
+
+===== binwalk ./gpl_release/lighttpd-1.4.65.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+
+===== binwalk ./gpl_release/lldpd-0.7.15.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2015-05-21 07:07:31
+73994         0x1210A         JBOOT STAG header, image id: 5, timestamp 0xF9274823, image size: 3606124124 bytes, image JBOOT checksum: 0xE1C6, header JBOOT checksum: 0xB445
+
+===== binwalk ./gpl_release/lua-5.1.5.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2012-02-13 20:55:01
+
+===== binwalk ./gpl_release/lxc-2.1.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2017-10-19 17:08:51
+
+===== binwalk ./gpl_release/lzo-2.10.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/mbedtls-2.16.6-gpl.tgz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2020-04-14 12:58:29
+
+===== binwalk ./gpl_release/mcproxy-2017-08-24-93b5ace42268160ebbfff4c61818fb15fa2d9b99.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+1368530       0x14E1D2        JBOOT STAG header, image id: 16, timestamp 0x9B21C2AF, image size: 3170993912 bytes, image JBOOT checksum: 0x18AC, header JBOOT checksum: 0x548D
+2180239       0x21448F        JBOOT STAG header, image id: 3, timestamp 0xF7F67CEF, image size: 2161440501 bytes, image JBOOT checksum: 0x1369, header JBOOT checksum: 0x3F0
+3363698       0x335372        JBOOT STAG header, image id: 4, timestamp 0xDF76195B, image size: 4041131146 bytes, image JBOOT checksum: 0x5EEC, header JBOOT checksum: 0xD75B
+
+===== binwalk ./gpl_release/miniupnpd-2.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/mosquitto-1.6.9.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+460774        0x707E6         JBOOT STAG header, image id: 15, timestamp 0xEBF0F9C, image size: 1326403635 bytes, image JBOOT checksum: 0x70C8, header JBOOT checksum: 0xFEC2
+
+===== binwalk ./gpl_release/musl-1.1.16.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/ncurses-6.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2018-01-28 00:27:03
+1592406       0x184C56        JBOOT STAG header, image id: 6, timestamp 0xFB7E7DD9, image size: 2575127899 bytes, image JBOOT checksum: 0x999E, header JBOOT checksum: 0x6E1E
+
+===== binwalk ./gpl_release/netpgpverify-20150204.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2015-02-04 17:55:29
+
+===== binwalk ./gpl_release/nettle-3.5.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2019-06-27 05:35:06
+
+===== binwalk ./gpl_release/openssh-7.9p1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/openssl-1.1.1g.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+4589359       0x46072F        JBOOT STAG header, image id: 12, timestamp 0xF3CD9D0D, image size: 2004824453 bytes, image JBOOT checksum: 0xA62A, header JBOOT checksum: 0x4138
+5389320       0x523C08        JBOOT STAG header, image id: 12, timestamp 0x4DFA9275, image size: 361693063 bytes, image JBOOT checksum: 0xEA59, header JBOOT checksum: 0x82B7
+
+===== binwalk ./gpl_release/opkg-0.4.2.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/pcre-8.43.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+117642        0x1CB8A         JBOOT STAG header, image id: 13, timestamp 0x3484C99F, image size: 3687849098 bytes, image JBOOT checksum: 0xFFA, header JBOOT checksum: 0x2BEB
+
+===== binwalk ./gpl_release/pcre2-10.32.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+
+===== binwalk ./gpl_release/popt-1.16.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2010-05-04 20:56:51
+
+===== binwalk ./gpl_release/procps-ng-3.3.11-8a198e3eafbde0b627e9992b41d26e6762e4f8c7.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/protobuf-cpp-3.11.0.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-11-26 01:21:42
+
+===== binwalk ./gpl_release/radvd-2.18.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2019-02-26 04:37:24
+
+===== binwalk ./gpl_release/rstp-2011-10-11-434d24bae108dbb21461a13a4abcf014afa8b029.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2021-11-28 03:15:44
+
+===== binwalk ./gpl_release/shadow-4.8.1.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+
+===== binwalk ./gpl_release/sqlite-autoconf-3310100.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2020-01-27 20:25:29
+
+===== binwalk ./gpl_release/squashfs4.2.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2011-02-28 22:42:22
+
+===== binwalk ./gpl_release/sscep.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2021-10-08 05:57:13
+
+===== binwalk ./gpl_release/syslog-ng-3.26.1.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 2020-03-04 17:14:19
+
+===== binwalk ./gpl_release/tcpdump-4.9.3.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2019-09-30 15:12:36
+
+===== binwalk ./gpl_release/tzcode2019b.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/tzdata2019b.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, maximum compression, from Unix, last modified: 1970-01-01 00:00:00 (null date)
+
+===== binwalk ./gpl_release/u-boot-2018.03.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+1511616       0x1710C0        JBOOT STAG header, image id: 9, timestamp 0xA358C024, image size: 1684554277 bytes, image JBOOT checksum: 0x1452, header JBOOT checksum: 0xC13C
+
+===== binwalk ./gpl_release/udns-0.4.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2014-01-23 12:58:35
+
+===== binwalk ./gpl_release/unbound-1.9.6.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2019-12-12 10:08:31
+
+===== binwalk ./gpl_release/util-linux-2.34.tar.xz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             xz compressed data
+752909        0xB7D0D         JBOOT STAG header, image id: 16, timestamp 0xE1083355, image size: 670308156 bytes, image JBOOT checksum: 0xD05A, header JBOOT checksum: 0x92B
+
+===== binwalk ./gpl_release/wireless_tools.29.tar.gz =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             gzip compressed data, from Unix, last modified: 2007-09-17 23:58:21
+
+===== binwalk ./gpl_release/xz-5.2.4.tar.bz2 =====
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             bzip2 compressed data, block size = 900k
+

@@ -1,0 +1,3 @@
+302 https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_firmware_3.2.0.13.bin
+302 https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_3.2.0.13.bin
+302 https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_fw_3.2.0.13.zip
