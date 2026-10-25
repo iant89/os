@@ -148,3 +148,22 @@ device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
 - **`scripts/web_audit/`** — ready-to-run interception kit: OWASP ZAP Automation
   Framework plan, Burp Suite checklist, and `probe_auth_bypass.sh` (curl-based /ubus
   auth-bypass and traversal probes) for the lab VM against the live device.
+
+## 10. Hidden debug endpoints & debug-shell enablement
+
+[`docs/WNC-CR200A_Hidden_Debug_Endpoints.md`](docs/WNC-CR200A_Hidden_Debug_Endpoints.md)
+inventories hidden URLs and undocumented APIs, and maps every plausible debug-shell
+enablement path:
+
+- **Community-confirmed hidden pages**: `/cgi/cgi_basic.js` (debug page: CPU temp,
+  device counts), `/#/firmware_upgrade` (manual image sideload), `/#/zenreach_ap` —
+  the admin UI is a hash-routed SPA, so hidden pages are `#/` routes and `/cgi/` files.
+- **Firmware-derived candidates**: `arc_appapi`/`arc_lcmd` vendor services,
+  `ftm` factory-test mode, `diag_socket_app`, `sysdebug` (`/lib/debug/*` dispatcher
+  with `eval`), `telnetd`/`inetd`/`tftpd`.
+- **Debug shells**: UART (JA1) + preinit `f`-key failsafe (passwordless root dropbear)
+  and `[1]-[4]` debug-level selector (`/tmp/debug_level`); LUKS-decrypt failure →
+  `ash --login`; hidden `/#/firmware_upgrade`; TR-069 SSH-enable precedent.
+- **Enumeration kit**: `scripts/web_audit/enum_hidden_endpoints.sh` +
+  `scripts/web_audit/hidden_paths.txt` (SPA route extraction from JS bundles, path
+  probing, `/ubus` object inventory, telnet/tftp port check).
