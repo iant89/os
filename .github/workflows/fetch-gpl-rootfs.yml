@@ -1,0 +1,153 @@
+name: Fetch GPL release and extract rootfs
+
+# Downloads Verizon's official WNC-CR200A GPL release 3.2.0.13 (verizon.com is not
+# reachable from the analysis sandbox but is from GitHub Actions), unpacks it, runs
+# binwalk over any firmware/rootfs images it contains, extracts root filesystems,
+# and commits the /etc/init.d scripts + web server configs + binwalk logs to the
+# branch for analysis (git is the retrieval channel; workflow artifacts are not
+# downloadable from every environment).
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fetch-gpl-rootfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract-rootfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Install extraction tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq binwalk squashfs-tools unzip curl file
+
+      - name: Download WNC-CR200A GPL release 3.2.0.13
+        run: |
+          set -euo pipefail
+          mkdir -p downloads analysis/gpl_rootfs/logs _work
+          UA="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+          PORTAL="https://www.verizon.com/support/residential/internet/equipment/open-source-software"
+          URL="https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_gpl_release_3.2.0.13.zip"
+          curl -fL --retry 3 --retry-delay 5 --max-time 3000 -A "$UA" -e "$PORTAL" \
+            -o downloads/WNC-CR200A_gpl_release_3.2.0.13.zip "$URL"
+          sha256sum downloads/WNC-CR200A_gpl_release_3.2.0.13.zip | tee analysis/gpl_rootfs/logs/zip_sha256.txt
+          stat -c '%n %s bytes' downloads/WNC-CR200A_gpl_release_3.2.0.13.zip | tee analysis/gpl_rootfs/logs/zip_size.txt
+          unzip -l downloads/WNC-CR200A_gpl_release_3.2.0.13.zip > analysis/gpl_rootfs/logs/zip_listing.txt || true
+          tail -5 analysis/gpl_rootfs/logs/zip_listing.txt
+          # Probe for a co-located firmware image (informational only)
+          : > analysis/gpl_rootfs/logs/firmware_probe.txt
+          for u in \
+            "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_firmware_3.2.0.13.bin" \
+            "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_3.2.0.13.bin" \
+            "https://www.verizon.com/content/dam/verizon/support/consumer/documents/open-source/WNC-CR200A_fw_3.2.0.13.zip"
+          do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -A "$UA" -e "$PORTAL" -I "$u" || echo err)
+            echo "$code $u" >> analysis/gpl_rootfs/logs/firmware_probe.txt
+          done
+          cat analysis/gpl_rootfs/logs/firmware_probe.txt
+
+      - name: Extract archive
+        run: |
+          set -euo pipefail
+          df -h / | tee analysis/gpl_rootfs/logs/disk_before.txt
+          mkdir -p _work/gpl
+          unzip -q -o downloads/WNC-CR200A_gpl_release_3.2.0.13.zip -d _work/gpl \
+            || echo "unzip returned nonzero (symlink/unsupported entries are OK)"
+          df -h / | tee analysis/gpl_rootfs/logs/disk_after.txt
+          du -sh _work/gpl | tee analysis/gpl_rootfs/logs/extracted_size.txt
+          (cd _work/gpl && find . -maxdepth 3 -type d | sort | head -300) > analysis/gpl_rootfs/logs/top_dirs.txt
+          head -40 analysis/gpl_rootfs/logs/top_dirs.txt
+
+      - name: Scan for firmware images and run binwalk
+        run: |
+          set -euo pipefail
+          cd _work/gpl
+          find . -type f \( -iname '*.bin' -o -iname '*.img' -o -iname '*.ubi' -o \
+            -iname '*.ubifs' -o -iname '*.squashfs' -o -iname '*.squashfs4' -o \
+            -iname '*.trx' -o -iname '*rootfs*' -o -iname '*.cpio*' -o -iname '*.jffs2' \
+            -o -iname '*.uImage' -o -iname '*.itb' -o -iname '*.elf' -o -iname '*.tar.gz' \
+            -o -iname '*.tgz' \) -size +64k > ../cand_images.txt || true
+          find . -type f -printf '%s %p\n' | sort -rn | head -40 | awk '{print $2}' > ../big_files.txt
+          { cat ../cand_images.txt; cat ../big_files.txt; } | sort -u > ../scan_list.txt
+          cp ../scan_list.txt ../../analysis/gpl_rootfs/logs/binwalk_scan_list.txt
+          echo "=== files to scan ==="; cat ../scan_list.txt
+          : > ../../analysis/gpl_rootfs/logs/binwalk_all.txt
+          while read -r f; do
+            [ -f "$f" ] || continue
+            echo "===== binwalk $f =====" >> ../../analysis/gpl_rootfs/logs/binwalk_all.txt
+            binwalk "$f" >> ../../analysis/gpl_rootfs/logs/binwalk_all.txt 2>&1 || true
+          done < ../scan_list.txt
+          wc -l ../../analysis/gpl_rootfs/logs/binwalk_all.txt
+
+      - name: Extract root filesystems (binwalk -e)
+        run: |
+          set -euo pipefail
+          cd _work
+          mkdir -p extracted
+          while read -r f; do
+            [ -f "gpl/$f" ] || continue
+            if binwalk "gpl/$f" | grep -qiE 'squashfs|jffs2|cpio archive|ubifs'; then
+              echo "Extracting image: $f"
+              (cd extracted && binwalk -e -M "../gpl/$f" > /dev/null 2>&1 || true)
+            fi
+          done < scan_list.txt
+          du -sh extracted || true
+          (cd extracted && find . -maxdepth 5 -type d | head -80) || true
+          find extracted -path '*/etc/init.d/*' -type f | head -20 || echo "no etc/init.d in extracted images"
+
+      - name: Collect init.d scripts, web configs, and boot files
+        run: |
+          set -euo pipefail
+          OUT=analysis/gpl_rootfs
+          mkdir -p "$OUT/raw" "$OUT/logs"
+          cd _work
+          {
+            find gpl extracted -type f \( \
+              -path '*/etc/init.d/*' -o -name '*.init' -o -name 'preinit' -o \
+              -name 'inittab' -o -name 'rc.common' -o -name 'rc.func' -o \
+              -name 'banner' -o -path '*/etc/config/*' -o -path '*/etc/rc.common' -o \
+              -iname '*uhttpd*' -o -iname '*lighttpd*' -o -iname '*nginx*' -o \
+              -iname '*thttpd*' -o -iname '*goahead*' -o -iname '*web*.conf' -o \
+              -iname '*rpcd*' -o -iname '*uclient*' -o -iname '*cgi-io*' -o \
+              -name 'passwd' -o -name 'group' -o -name 'shadow' -o \
+              -iname '*lxc*.conf' -o -name 'config' -path '*lxc*' \
+            \) -size -2M -type f 2>/dev/null || true
+          } | sort -u > analysis/gpl_rootfs/logs/collected_list.txt
+          wc -l analysis/gpl_rootfs/logs/collected_list.txt
+          # preserve original paths under raw/ for provenance
+          tar -cf - -T analysis/gpl_rootfs/logs/collected_list.txt 2>/dev/null | (cd ../"$OUT"/raw && tar -xf -) || true
+          du -sh ../"$OUT"/raw
+          find ../"$OUT"/raw -type f | wc -l
+
+      - name: Record firmware-update URLs found in the sources
+        run: |
+          set -euo pipefail
+          grep -rEoh 'https?://[a-zA-Z0-9./_%?=&:+-]+' _work/gpl --include='*.sh' --include='*.conf' \
+            --include='*.json' --include='*.xml' --include='*.init' --include='Makefile' 2>/dev/null \
+            | grep -iE 'fota|ota|firmware|update|verizon|wnc' | sort -u | head -60 \
+            > analysis/gpl_rootfs/logs/update_urls.txt || true
+          cat analysis/gpl_rootfs/logs/update_urls.txt
+
+      - name: Commit analysis payload to branch
+        run: |
+          set -euo pipefail
+          find analysis/gpl_rootfs -type f -size +4M -delete
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f analysis/gpl_rootfs
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit"
+          else
+            git commit -m "Add GPL release rootfs extraction: init.d scripts, web configs, binwalk logs (WNC-CR200A 3.2.0.13)"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
