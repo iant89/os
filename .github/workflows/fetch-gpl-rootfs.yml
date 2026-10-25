@@ -103,7 +103,7 @@ jobs:
               -name 'preinit' -o -name 'inittab' -o -name 'rc.common' -o -name 'rc.func' -o \
               -path '*/etc/config/*' -o -iname '*uhttpd*' -o -iname '*lighttpd*.conf' -o \
               -iname '*rpcd*.config' -o -iname '*cgi*' -o -name 'passwd' -o -name 'group' \
-            \) -size -1M -type f 2>/dev/null | sort -u > analysis/gpl_rootfs/logs/collected_v2.txt || true
+            \) -size -2M -type f 2>/dev/null | sort -u > analysis/gpl_rootfs/logs/collected_v2.txt || true
           wc -l analysis/gpl_rootfs/logs/collected_v2.txt || true
           sed 's|^_work/unpacked/||' analysis/gpl_rootfs/logs/collected_v2.txt > analysis/gpl_rootfs/logs/collected_v2_rel.txt || true
           (cd _work/unpacked && tar -cf - -T "../../analysis/gpl_rootfs/logs/collected_v2_rel.txt" 2>/dev/null) | (cd "$OUT" && tar -xf -) || true
