@@ -121,3 +121,16 @@ device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
   closures) for offline install via **`scripts/setup_firmware_lab.sh --bundle`**.
 - **`scripts/uart_connect.sh`** / **`scripts/uart_boot_capture.sh`** + **`udev/`** rules —
   serial console access and boot-log capture for the device under test.
+
+---
+
+## 8. Web Administration & Authentication Analysis
+
+- **`docs/WNC-CR200A_Web_Admin_Auth.md`** — inventory of web-admin configuration files
+  (lighttpd, `/etc/config/rpcd`, rpcd `acl.d`) and a deep dive into login and session
+  management (rpcd `session.login`: shadow-hash passwords, 32-hex `/dev/urandom`
+  session IDs, 300 s sliding timeout, `/var/run/rpcd/sessions`), plus the credential
+  handling scripts (DDNS helper, failsafe dropbear) and auth-review observations.
+- **`analysis/web_auth/`** — evidence copies: rpcd `session.c`/`session.h` (from the
+  CR200A GPL release), stock OpenWrt 18.06 `rpcd.config` and `luci-base.json` ACL,
+  mosquitto 1.6.9 stock config.
