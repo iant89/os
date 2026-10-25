@@ -62,3 +62,30 @@ Because the cloud agent sandbox restricts outbound shell access to `github.com` 
    - `src/components/mcproxy` (`2017-08-24`, commit `93b5ace42268`)
    - `src/components/netifd` (`2019-08-05`, commit `5e02f94411b0`)
    - `src/components/opkg-lede` (`0.4.2`, commit `f2166a89b7e9`)
+
+---
+
+## 4. FCC ID Documentation (NKR-LV65C-T3)
+
+The repository also carries the official FCC **Internal Photos** exhibit for the same
+device (FCC ID `NKR-LV65C-T3`, Wistron NeWeb):
+
+- **`downloads/fcc/WNC-CR200A_FCC_Internal_Photos_6604463.pdf`** — "22A0288R-Product
+  Photos" (DEKRA, 33 pages), SHA-256
+  `b4f60559d2e1097f23e2b56d53b879bbf340f1e503dfd9cd9636b6faea7d7b48`.
+- **`docs/WNC-CR200A_FCC_Internal_Photos_Analysis.md`** — chip identification (SoC,
+  flash, DRAM, modem, Wi-Fi 6E front end) and the UART/JTAG test-point survey derived
+  from the photos.
+- **`.github/workflows/fetch-fcc-exhibits.yml`** — re-downloads the exhibit from 5 mirrors,
+  verifies the hash, and commits the PDF to this branch.
+
+---
+
+## 5. Verizon Gateway Default Credentials Survey
+
+- **`docs/Verizon_Gateway_Default_Credentials.md`** — publicly documented default
+  credentials for Verizon gateways/routers (5G/LTE Home, Fios, DSL, Jetpack). Key point:
+  modern units such as the WNC-CR200A ship with a **unique per-device password printed
+  on the device label**, not a shared default like `admin`; shared `admin`/`password`
+  style defaults exist only on legacy Actiontec/Westell hardware (and one documented
+  ASK-NCQ1338 exception).
